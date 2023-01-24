@@ -1,0 +1,252 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+/* home */
+.tutorials .dropdown {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.home {
+    border: .1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bree Serif';
+    background-color: #282A35 !important;
+}
+
+.home_box_outer {
+    border: .1rem solid black;
+    border-radius: .5rem;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: .5rem .5rem 1rem black;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.home_box_outer h1 {
+    font-size: 4rem;
+    margin: .25rem 0;
+}
+
+.home_box_outer h3 {
+    color: gold;
+}
+
+.home_box_outer input {
+    padding: .75rem 1rem;
+    border: none;
+    border-radius: .25rem 0 0 .25rem;
+    width: 100%;
+}
+
+.home_box_outer i {
+    color: white;
+    font-size: 2rem;
+}
+
+.home_box_inner {
+    width: 100%;
+    display: flex;
+}
+
+.home_box_inner a {
+    padding: .75rem 1rem;
+    background-color: green;
+    border-radius: 0 .25rem .25rem 0;
+    width: 10%;
+}
+
+.home_box_inner a:hover {
+    background-color: brown;
+}
+
+/* HTML */
+.HTML {
+    border: .1rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9EEE1 !important;
+
+}
+
+.HTML-box {
+    display: flex;
+    gap: 5rem;
+    margin: 5rem 0;
+}
+
+.HTML-box-table {
+    /* border: .1rem solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Bree Serif';
+}
+
+.HTML-box-table h1 {
+    font-size: 4rem;
+    margin: 0 auto;
+}
+
+.HTML-box-table ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.HTML-box-table li {
+    margin: 1rem 0;
+}
+
+.HTML-box-table a {
+    /* border: .1rem solid black; */
+    border-radius: 1.5rem;
+    padding: .75rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.learn_html {
+    background-color: green;
+}
+
+.html_preferences {
+    background-color: orange;
+}
+
+.code-screen {
+    border: .1rem solid black;
+    background-color: grey;
+    padding: 3rem 1rem;
+    border-radius: .25rem;
+    font-family: 'Bree Serif';
+    font-weight: bold;
+    box-shadow: .25rem .25rem .5rem black;
+}
+
+.code-screen h2 {
+    margin: .5rem auto;
+}
+
+.code-screen-box {
+    background-color: white;
+    border-radius: .25rem;
+    border-left: .25rem solid green;
+    padding: .5rem 20rem 5rem .5rem;
+}
+
+.CSS {
+    background-color: #FFF4A3 !important;
+}
+
+.javascript-box-table {
+    color: white;
+}
+
+.javascript {
+    background-color: #282A35 !important;
+}
+
+/* footer */
+footer {
+    background-color: #282A35;
+    padding: 2rem 0;
+}
+
+/* btn */
+.btn {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.btn a {
+    text-decoration: none;
+    padding: .75rem 1.25rem;
+    border-radius: .25rem;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-family: 'Ubuntu';
+}
+
+.btn a:hover {
+    background-color: #D9EEE1;
+}
+
+/* icons */
+.icons {
+    margin-top: 1rem;
+}
+
+.icons i {
+    float: right;
+    font-size: 1.5rem;
+    letter-spacing: 1.25rem;
+    color: white;
+
+}
+
+.icons i:hover {
+    color: gold;
+}
+
+/* paragraph */
+.paragraph {
+    margin-top: 3rem;
+}
+
+.paragraph p {
+    width: 96%;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu';
+}
+
+.paragraph a {
+    color: white;
+}
+
+.paragraph a:hover {
+    font-weight: bold;
+    color: orange;
+}
+
+/* thumbs up */
+.thumbs_up i {
+    margin-top: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.thumbs_up i:hover {
+    color: gold;
+}

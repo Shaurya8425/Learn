@@ -1,0 +1,43 @@
+p{
+    /* line-height: 2rem; */
+}
+.paragraph, .division{
+    border: 1px solid black;
+    padding: .75rem .5rem;
+}
+.paragraph{
+    margin-top: 0;
+}
+.division{
+    margin-bottom: 1rem;
+}
+#one, #two{
+    width: 50%;
+}
+.table1, .table2{
+    text-align: center;
+    border-collapse: collapse;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+td{
+    /* border: 1px solid black; */
+}
+tr{
+    /* border: 1px solid black; */
+}
+.table1 a, .table2 a{
+    text-decoration: none;
+}
+.table1 a:hover, .table2 a:hover{
+    text-decoration: underline;
+}
+.style_me{
+    border: 1px solid brown;
+}
+@media(max-width:460px){
+    #one, #two{
+        display: none;
+    }
+}

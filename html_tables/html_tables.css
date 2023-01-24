@@ -1,0 +1,40 @@
+tr:hover {
+    background-color: yellow;
+    color: red;
+}
+
+table {
+    width: 100%;
+    /* border: 1px solid blue;
+    border-radius: .25rem; */
+}
+.beta{
+    overflow-x: auto;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+td, th{
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
+/* tr:nth-child(even):hover {
+    background-color: yellow;
+    color: red;
+} */
+
+/* th:nth-child(even),
+td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+} */
+
+/* th:nth-child(even):hover,
+td:nth-child(even):hover {
+    background-color: yellow;
+    color: red;
+} */
+.alpha p{
+    color: white;
+    margin: 0 auto;
+}

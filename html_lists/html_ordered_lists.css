@@ -1,0 +1,17 @@
+.table1{
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    
+}
+.table1 tr:nth-child(even){
+    background-color:  rgba(128, 128, 128, 0.212);
+}
+.table1 th, .table1 td{
+    padding: .5rem 0;
+}
+.table1 td{
+    padding-left: 1.25rem;
+}

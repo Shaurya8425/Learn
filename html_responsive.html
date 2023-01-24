@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html responsive web design | html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
+    <link rel="stylesheet" href="html_responsive.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="main">
+            <ul>
+                <li class="stop_breaking"><i class="fa-solid fa-code"></i>&nbsp;LearnToCode</li>
+                <li class="list_item"></li>
+            </ul>
+            <ul class="list">
+                <li><a href="">Home</a>
+                    <hr class="active">
+                </li>
+                <li class="stop_breaking tutorials">
+                    <a href="">Tutorials&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="sign_up.html" class="signup">SignUp</a></li>
+                <li><a href="log_in.html" class="login">LogIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="thin_nav_strip">
+        <a href="javascript:void(0);" onclick="sidebar_toggle()">Toggle<i class="fa-solid fa-bars"
+                onmousedown="return false" onselectstart="return false"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="html.html">HTML</a>
+        <a href="">CSS</a>
+        <a href="">JavaScript</a>
+    </div>
+    <main>
+        <!-- Sidebar Navigation,I'm excited about it -->
+        <div class="side_navbar-outer">
+            <div class="side_navbar-inner">
+                <h2>HTML Tutorials</h2>
+                <a href="html.html">HTML Introduction</a>
+                <a href="html_heading.html">HTML Headings</a>
+                <a href="html_paragraph.html">HTML Paragraphs</a>
+                <a href="html_formatting.html">HTML Paragraphs</a>
+
+                <!-- html links -->
+                <a href="javascript:void(0);" onclick="links_toggle()">HTML Links &nbsp;<label for="links_dropdown"><i
+                            class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="links_dropdown"> -->
+                <div class="sidebar_links_dropdown">
+                    <ul class="sidebar_links_dropdown_menu">
+                        <li><a href="html_links/html_links.html">Links</a></li>
+                        <li><a href="html_links/html_links_link_colors.html">Link Colors</a></li>
+                        <li><a href="html_links/html_links_link_bookmarks.html">Link Bookmarks</a></li>
+                    </ul>
+                </div>
+
+                <!-- html images -->
+                <a href="javascript:void(0);" onclick="images_toggle()">HTML Images &nbsp;<label
+                        for="images_dropdown"><i class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="images_dropdown"> -->
+                <div class="sidebar_images_dropdown">
+                    <ul class="sidebar_images_dropdown_menu">
+                        <li><a href="html_images/html_images.html">Images</a></li>
+                        <li><a href="html_images/html_image_maps.html">Image Map</a></li>
+                        <li><a href="html_images/html_background_images.html">Background Images</a></li>
+                        <li><a href="html_images/html_picture_element.html">Background Images</a></li>
+                    </ul>
+                </div>
+
+                <!-- html tables -->
+                <a href="javascript:void(0)" onclick="tables_toggle()">HTML Tables &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown tables_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_tables/html_tables.html">HTML Tables</a></li>
+                        <li><a href="html_tables/html_table_borders.html">Table Borders</a></li>
+                        <li><a href="html_tables/html_table_sizes.html">Table Sizes</a></li>
+                        <li><a href="html_tables/html_table_headers.html">Table Headers</a></li>
+                        <li><a href="html_tables/html_table_padding_spacing.html">Padding & Spacing</a></li>
+                        <li><a href="html_tables/html_table_colspan_rowspan.html">Colspan & Rowspan</a></li>
+                        <li><a href="html_tables/html_table_styling.html">Table Styling</a></li>
+                        <li><a href="html_tables/html_table_colgroup.html">Table Colgroup</a></li>
+                    </ul>
+                </div>
+
+                <!-- html lists -->
+                <a href="javascript:void(0)" onclick="lists_toggle()">HTML Lists &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown lists_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_lists/lists.html">Lists</a></li>
+                        <li><a href="html_lists/html_unordered_list.html">Unordered Lists</a></li>
+                        <li><a href="html_lists/html_ordered_lists.html">Ordered Lists</a></li>
+                        <li><a href="html_lists/html_other_lists.html">Other Lists</a></li>
+                    </ul>
+                </div>
+
+                <a href="html_block_inline.html">HTML Block & Inline</a>
+                <a href="html_class.html">HTML Classes</a>
+                <a href="html_id.html">HTML Id</a>
+                <a href="html_iframe.html">HTML Iframes</a>
+                <a href="html_javascript.html">HTML JavScript</a>
+                <a href="html_file_path.html">HTML File Paths</a>
+                <a href="html_head.html">HTML Head</a>
+                <a href="html_layout.html">HTML Layout</a>
+                <a href="html_responsive.html">HTML Responsive</a>
+ 
+            </div>
+        </div>
+
+        <div class="main_content">
+            <h2>HTML Responsive web design</h2>
+            <div class="previous_next">
+                <a href="html_layout.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <hr class="line">
+            <img class="introduction_img" src="responsive_web.png" alt="">
+            <h2>What is Responsive Web Design?</h2>
+            <p>Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a
+                website, to make it look good on all devices (desktops, tablets, and phones):</p>
+            <hr class="line">
+            <div class="setting_the_viewport">
+                <h2>Setting The Viewport</h2>
+                <p>To create a responsive website, add the following <span class="styling_the_span">&lt;meta&gt;</span>
+                    tag to all your web pages:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">meta</span> <span
+                                class="red">name</span>=<span class="blue">"viewport"</span> <span
+                                class="red">content</span>=<span class="blue">"width=device-width,
+                                initial-scale=1.0"&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <p>This will set the viewport of your page, which will give the browser instructions on how to control
+                    the page's dimensions and scaling. <br>Here is an example of a web page <i>without</i> the viewport
+                    meta tag, and the same web page with the viewport meta tag:</p>
+                <div class="container">
+                    <iframe src="viewport/without_viewport.html" frameborder="1"></iframe>
+                    <iframe src="viewport/with_viewport.html" frameborder="1"></iframe>
+                </div>
+            </div>
+            <hr class="line">
+            <hr class="line">
+            <div class="responsive_images">
+                <h2>Responsive Images</h2>
+                <p>Responsive images are images that scale nicely to fit any browser size.</p>
+                <h3>Using the width property</h3>
+                <p>If the CSS width property is set to 100%, the image will be responsive and scale up and down:</p>
+                <img class="image1" src="a_workplace.jpg" alt="">
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span class="red">src</span>=<span class="blue">"a_workplace"</span> <b><span class="red">style</span>=<span class="blue">"width: 100%"</b>&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <p>Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.</p>
+                <h3>Using the max-width Property</h3>
+                <p>If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:</p>
+                <img class="image2" src="an_interior.jpg" alt="">
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span class="red">src</span>=<span class="blue">"an_interior.jpg"</span> <span class="red">style</span>=<span class="blue">"max-width: 100%";&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="show_different_images_depending_on_browser_width">
+                <h3>Show Different Images Depending on Browser Width</h3>
+                <p>The HTML <span class="styling_the_span">&lt;picture&gt;</span> element allows you to define different images for different browser window sizes. <br>Resize the browser window to see how the image below changes depending on the width:</p>
+                <picture>
+                    <source srcset="fire_place1.jpg" media="(max-width: 600px)">
+                    <source srcset="fire_place2.jpg" media="(max-width: 1500px)">
+                    <source srcset="christmas.jpg">
+                    <img src="mystic_night.jpg" alt="Snow fall and Night">
+                </picture>
+            </div>
+            <hr class="line">
+            <div class="responsive_text_size">
+                <h2>Responsive text size</h2>
+                <p>The text size can be set with a "vw" unit, which means the "viewport width". <br>That way the text size will follow the size of the browser window:</p>
+                <div class="hello_world">
+                    <span>Hello World</span>
+                    <p>Resize the browser window to see how the text size scales.</p>
+                </div>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">h1</span> <span class="red">style</span>=<span class="blue">"font-size: 10vw"&gt;</span>Hello World<span class="blue">&lt;</span><span class="brown">/h1</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="note">
+                    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="media_queries">
+                <h2>Media Queries</h2>
+                <p>In addition to resize text and images, it is also common to use media queries in responsive web pages. <br>With media queries you can define completely different styles for different browser sizes. <br>Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stack vertically on small screens:</p>
+                <div class="color_box">
+                    <div class="color1">
+                        <span>Left <br> Menu</span>
+                    </div>
+                    <div class="color2">
+                        <span>Main Content</span>
+                    </div>
+                    <div class="color3">
+                        <span>Right <br> Content</span>
+                    </div>
+                </div>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">style</span><span class="blue">&gt;</span>
+                        </span>
+                        <span>
+                            <span class="brown">.left, .right</span> {
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="red">float</span>: <span class="blue">left</span>;
+                            <span class="red">width</span>: <span class="blue">20%</span>;
+                        </span>
+                        <span>
+                        }
+                        </span> <br>
+                        <span>
+                            <span class="brown">.main</span> {
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="red">foat</span>: <span class="blue">left</span>;
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="red">width</span>: <span class="blue">20%</span>;
+                        </span> <br>
+                        <span>
+                        }
+                        </span> <br>
+                        <span>
+                            <span class="brown">.main</span> {
+                        </span> <br>
+                        <span>
+                            <span class="red">float</span>: <span class="blue">left</span>;
+                        </span> <br>
+                        <span>
+                            <span class="red">width</span>: <span class="blue">60%</span>;
+                        </span> <br>
+                        <span>
+                        }
+                        </span> <br>
+                        <span>
+                            <span class="brown">@media screen and (max-width: 800px)</span> {
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="brown">.left, .main, .right</span> {
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="red">width</span>: <span class="blue">100%</span>;
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+                        </span> <br>
+                        <span>
+                        }
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/style</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="responsive_web_page_full_example">
+                <h2>Responsive Web Page - Full Example</h2>
+                <p>A responsive web page should look good on large desktop screens and on small mobile phones.</p>
+            </div>
+            <hr class="line">
+            <div class="responsive_web_design_frameworks">
+                <h2>Responsive Web Design - Frameworks</h2>
+                <p>All popular CSS Frameworks offer responsive design. <br> They are free, and easy to use.</p>
+                <h2>W3.CSS</h2>
+                <p>W3.CSS is a modern CSS framework with support for desktop, tablet, and mobile design by default. <br>W3.CSS is smaller and faster than similar CSS frameworks. <br>W3.CSS is designed to be independent of jQuery or any other JavaScript library.</p>
+                <div class="demo">
+                    <div class="demo_container1">
+                        <h1>W3.CSS Demo</h1>
+                        <p>Resize the page to see the responsiveness!</p>
+                    </div>
+                    <div class="demo_container2">
+                        <div class="demo_box1">
+                            <h3>London</h3>
+                            <p>London is the capital city of England. <br>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                        </div>
+                        <div class="demo_box1">
+                            <h3>Paris</h3>
+                            <p>Paris is the capital of France. <br>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+                        </div>
+                        <div class="demo_box1">
+                            <h3>Tokyo</h3>
+                            <p>Tokyo is the capital of Japan. <br>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="bootstrap">
+                <h2>Bootstrap</h2>
+                <p>Another popular CSS framework is Bootstrap. Bootstrap uses HTML, CSS and jQuery to make responsive web pages.</p>
+            </div>
+            <hr class="line">
+            <!-- Code screen end. -->
+            <div class="previous_next">
+                <a href="html_layout.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <!-- Footer -->
+            <hr class="line">
+            <div class="footer">
+                <button onclick="report_error_toggle()">Report Error</button>
+                <div class="report_error">
+                    <h3>Report error:</h3>
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail: <span>shaurya.y321@gmail.com</span></p>
+                </div>
+                <div class="forum_about">
+                    <a href="">Forum</a> | <a href="about.html">About</a>
+                </div>
+                <div class="paragraphs">
+                    <p>LearnToCode is optimized for learning and training. Examples might be simplified to improve
+                        reading
+                        and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but
+                        we
+                        cannot warrant full correctness of all content. While using LearnToCode, you agree to have read
+                        and
+                        accepted our <a href="">terms of use</a>, <a href="">cookie and privacy policy</a>.</p>
+                    <p><a href="">Copyright 1999-2022</a> by Auxilium Info. All Rights Reserved. <a href="">LearnToCode
+                            is
+                            Powered by Auxilium</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

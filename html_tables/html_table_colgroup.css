@@ -1,0 +1,14 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+col{
+    background-color: #d6eeee;
+}
+button{
+    background: transparent;
+    border: none;
+}
+button img{
+    width: 2rem;
+}

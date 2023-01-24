@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learntocode | html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="html.css">
+    <link rel="stylesheet" href="media_query.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="main">
+            <ul>
+                <li class="stop_breaking"><i class="fa-solid fa-code"></i>&nbsp;LearnToCode</li>
+                <li class="list_item"></li>
+            </ul>
+            <ul class="list">
+                <li><a href="">Home</a>
+                </li>
+                <li class="stop_breaking tutorials">
+                    <a href="">Tutorials&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                    <hr class="active">
+                    <ul class="dropdown">
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="sign_up.html" class="signup">SignUp</a></li>
+                <li><a href="log_in.html" class="login">LogIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="thin_nav_strip">
+        <a href="javascript:void(0);" onclick="sidebar_toggle()">Toggle<i class="fa-solid fa-bars"
+                onmousedown="return false" onselectstart="return false"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="html.html">HTML</a>
+        <a href="">CSS</a>
+        <a href="">JavaScript</a>
+    </div>
+    <main>
+        <!-- Sidebar Navigation,I'm excited about it -->
+        <div class="side_navbar-outer">
+            <div class="side_navbar-inner">
+                <h2>HTML Tutorials</h2>
+                <a href="html.html">HTML Introduction</a>
+                <a href="html_heading.html">HTML Headings</a>
+                <a href="html_paragraph.html">HTML Paragraphs</a>
+                <a href="html_formatting.html">HTML Formatting</a>
+
+                <!-- html links -->
+                <a href="javascript:void(0);" onclick="links_toggle()">HTML Links &nbsp;<label for="links_dropdown"><i
+                            class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="links_dropdown"> -->
+                <div class="sidebar_links_dropdown">
+                    <ul class="sidebar_links_dropdown_menu">
+                        <li><a href="html_links/html_links.html">Links</a></li>
+                        <li><a href="html_links/html_links_link_colors.html">Link Colors</a></li>
+                        <li><a href="html_links/html_links_link_bookmarks.html">Link Bookmarks</a></li>
+                    </ul>
+                </div>
+
+                <!-- html images -->
+                <a href="javascript:void(0);" onclick="images_toggle()">HTML Images &nbsp;<label
+                        for="images_dropdown"><i class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="images_dropdown"> -->
+                <div class="sidebar_images_dropdown">
+                    <ul class="sidebar_images_dropdown_menu">
+                        <li><a href="html_images/html_images.html">Images</a></li>
+                        <li><a href="html_images/html_image_maps.html">Image Map</a></li>
+                        <li><a href="html_images/html_background_images.html">Background Images</a></li>
+                        <li><a href="html_images/html_picture_element.html">The Picture Element</a></li>
+                    </ul>
+                </div>
+
+                <!-- html tables -->
+                <a href="javascript:void(0)" onclick="tables_toggle()">HTML Tables &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown tables_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_tables/html_tables.html">HTML Tables</a></li>
+                        <li><a href="html_tables/html_table_borders.html">Table Borders</a></li>
+                        <li><a href="html_tables/html_table_sizes.html">Table Sizes</a></li>
+                        <li><a href="html_tables/html_table_headers.html">Table Headers</a></li>
+                        <li><a href="html_tables/html_table_padding_spacing.html">Padding & Spacing</a></li>
+                        <li><a href="html_tables/html_table_colspan_rowspan.html">Colspan & Rowspan</a></li>
+                        <li><a href="html_tables/html_table_styling.html">Table Styling</a></li>
+                        <li><a href="html_tables/html_table_colgroup.html">Table Colgroup</a></li>
+                    </ul>
+                </div>
+
+                <!-- html lists -->
+                <a href="javascript:void(0)" onclick="lists_toggle()">HTML Lists &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown lists_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_lists/lists.html">Lists</a></li>
+                        <li><a href="html_lists/html_unordered_list.html">Unordered Lists</a></li>
+                        <li><a href="html_lists/html_ordered_lists.html">Ordered Lists</a></li>
+                        <li><a href="html_lists/html_other_lists.html">Other Lists</a></li>
+                    </ul>
+                </div>
+
+                <a href="html_block_inline.html">HTML Block & Inline</a>
+                <a href="html_class.html">HTML Classes</a>
+                <a href="html_id.html">HTML Id</a>
+                <a href="html_iframe.html">HTML Iframes</a>
+                <a href="html_javascript.html">HTML JavScript</a>
+                <a href="html_file_path.html">HTML File Paths</a>
+                <a href="html_head.html">HTML Head</a>
+                <a href="html_layout.html">HTML Layout</a>
+                <a href="html_responsive.html">HTML Responsive</a>
+ 
+            </div>
+        </div>
+        <div class="main_content">
+            <h2>Introduction to HTML, CSS, JavaScript & How websites work?</h2>
+            <div class="previous_next">
+                <a href="" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_heading.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="intro_para">
+                <p><strong>(HTML)</strong> is the least amount of code which you need to write to make a working
+                    website.<br> <strong> (CSS & JavaScript)</strong> is used to add beauty & brain. <br> Let us
+                    understand this with a friendly example. A human body is perfect example of that i.e., every human
+                    body have similar fundamental body design yet each body is unique because every person have
+                    different physicallity & go through unique life experience.</p>
+            </div>
+            <div class="how_website_work">
+                <h2>How websites work?</h2>
+                <img src="how_website_works.png" alt="">
+                <p>This image is credited to blog.agnibho.com</p>
+            </div>
+            <div class="role_of_html">
+                <h2>Role of HTML (Hypertext Markup Language)</h2>
+                <ul>
+                    <li>language for giving static skeleton to web application & websites.</li>
+                    <li>well standardized system.</li>
+                </ul>
+            </div>
+            <div class="role_of_css">
+                <h2>Role of CSS (Cascading Style Sheet)</h2>
+                <ul>
+                    <li>language used to handle presentation of web page.</li>
+                    <li>make website beautiful & modern looking.</li>
+                </ul>
+            </div>
+            <div class="role_of_javscript">
+                <h2>Role of JavaScript</h2>
+                <ul>
+                    <li>high level dynamic interpreted programming language.</li>
+                    <li>allows client side scripting to create completely dynamic web application & websites.</li>
+                </ul>
+            </div>
+            <div class="tools_which_we_will_be_using">
+                <h2>Tools Which we will be using</h2>
+                <ul>
+                    <li>VS (Visual Studio) Code.</li>
+                    <li>"Live Server" Extension.</li>
+                    <li>A browser i.e., Chome or Edge or "Fire Fox" etc</li>
+                    <li>"Git"</li>
+                </ul>
+                <h3>VS (Visual Studio) Code</h3>
+                <p>Though we can use very simple editor like notepad or notepad++ but we will use vs (Visual Studio)
+                    code because It will help you maintain our code in much efficient/effective way.</p>
+                <h3>Pros of "VS Code" include.</h3>
+                <ul>
+                    <li>Ease in managing files & folders.</li>
+                    <li>Suggestions & Shortcuts, when you'll be typing your code, I.e., this "!" will make us ready a
+                        very simple html file layout.</li>
+                    <li>Auto completion of tags.</li>
+                    <li>Integration of "Git" help us manage big projects very easy to maintain.</li>
+                </ul>
+                <h3>"Live Server" Extension</h3>
+                <p>This Extension in VS Code will make sure that you don't have to refresh your browser to see the
+                    changes which you've made, each time when you save your code in VS Code. The only exception is when
+                    your computer will come out from sleep mode, only then you'll need to hit the refresh button of your
+                    browser only one time.</p>
+                <h3>Pros of "Live Server".</h3>
+                <ul>
+                    <li>Able to get rid of a repetative task & forget to worry about refreshing your web page in which
+                        you're working on.</li>
+                </ul>
+                <div class="tip-outer">
+                    <!-- <h4>Tip:</h4> -->
+                    <div class="tip-inner note">
+                        <p> <b>Tip:</b> If you want to git rid of saving your file again & again then you can choose an auto save
+                            option of VS Code, It'll take care of the saving job for you.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Code Screen -->
+            <div class="a_simple_html_document">
+                <h2>A Simple HTML Document</h2>
+                <div class="a_simple_html_document-code_screen">
+                    <h2>Example:</h2>
+                    <div class="a_simple_html_document-code_screen-box">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">!DOCTYPE</span> <span
+                                class="red">html</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">html</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">head</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">title</span><span
+                                class="blue">&gt;</span>Page Title<span class="blue">&lt;</span><span
+                                class="brown">/title</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/head</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">body</span><span class="blue">&gt;</span>
+                        </span> <br> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">h1</span><span class="blue">&gt;</span>My
+                            First Heading <span class="blue">&lt;</span><span class="brown">/h1</span><span
+                                class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>My
+                            First Paragraph. <span class="blue">&lt;</span><span class="brown">/p</span><span
+                                class="blue">&gt;</span>
+                        </span> <br> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/body</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/html</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="name_of_tags_and_what_they_do">
+                <h2>Name of tags and what they do?</h2>
+                <ul>
+                    <li><span class="tags_and_thier_uses">&lt;!DOCTYPE html&gt;</span> tells html file, code is starting
+                        from here.</li>
+                    <li><span class="tags_and_thier_uses">&lt;html&gt;</span> specify main html content & language</li>
+                    <li><span class="tags_and_thier_uses">&lt;head&gt;</span> includes meta & title tag</li>
+                    <li><span class="tags_and_thier_uses">&lt;title&gt;</span> set the name of your html page when It'll
+                        be shown in browser.</li>
+                    <li><span class="tags_and_thier_uses">&lt;body&gt;</span> include most of content of web page &
+                        mejority of your html code will be written here.</li>
+                </ul>
+            </div>
+            <div class="note">
+                <p><b>Note:</b> content inside body tag will be shown in the browser & content inside title tag will be
+                    shown in browser's title bar</p>
+            </div>
+            <div class="previous_next">
+                <a href="" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_heading.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <!-- Footer -->
+            <hr class="line">
+            <div class="footer">
+                <button onclick="report_error_toggle()">Report Error</button>
+                <div class="report_error">
+                    <h3>Report error:</h3>
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail: <span>shaurya.y321@gmail.com</span></p>
+                </div>
+                <div class="forum_about">
+                    <a href="">Forum</a> | <a href="about.html">About</a>
+                </div>
+                <div class="paragraphs">
+                    <p>LearnToCode is optimized for learning and training. Examples might be simplified to improve reading
+                        and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we
+                        cannot warrant full correctness of all content. While using LearnToCode, you agree to have read and
+                        accepted our <a href="">terms of use</a>, <a href="">cookie and privacy policy</a>.</p>
+                    <p><a href="">Copyright 1999-2022</a> by Auxilium Info. All Rights Reserved. <a href="">LearnToCode is
+                            Powered by Auxilium</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>

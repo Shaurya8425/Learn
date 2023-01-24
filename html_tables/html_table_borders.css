@@ -1,0 +1,44 @@
+.blank_table{
+    width: 36%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+}
+.blank_table th, 
+.blank_table td{
+    border: 1px solid black;
+}
+.collapsed_table_borders table, 
+.collapsed_table_borders th, 
+.collapsed_table_borders td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 36%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.style_table_borders table, 
+.style_table_borders th, 
+.style_table_borders td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 36%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: #96D4D4;
+}
+.round_table_borders table, .round_table_borders th, .round_table_borders td{
+    border-radius: .5rem;
+}
+
+.dotted_table_borders table, .dotted_table_borders th, .dotted_table_borders td{
+    border-collapse: collapse;
+    border: 2px dotted black;
+}
+.dotted_table_borders li{
+    margin-bottom: .64rem;
+}
+.border_color table, .border_color th, .border_color td{
+    border-collapse: collapse;
+    border: 2px solid #96D4D4;
+}

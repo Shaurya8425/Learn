@@ -1,0 +1,57 @@
+.an_idea{
+    display: inline-block;
+}
+.an_idea img{
+    width: 100%;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img_understanding{
+    display: flex;
+}
+.img_understanding img{
+    width: 50%;
+    display: block;
+}
+.the_area{
+    width: 100%;
+}
+.go_man_img{
+    display: flex;
+    align-items: center;
+}
+.go_man_img img{
+    width: 100%;
+}
+.go_man_circlemarked, .go_man_rectanglemarked, .go_man_trianglemarked{
+    width: 50%;
+}
+.magnifying_glass{
+    display: inline-block;
+}
+.magnifying_glass img{
+    width: 100%;
+}
+.magnifying_glass_marked{
+    display: inline-block;
+}
+.magnifying_glass_marked img{
+    width: 100%;
+}
+.alpha p{
+    margin: 0 auto;
+    color: white;
+}
+.workplace_marked{
+    display: inline-block;
+}
+.workplace_marked img{
+    width: 100%;
+}
+.flexbox{
+    display: flex;
+    gap: .5rem;
+}

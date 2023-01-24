@@ -1,0 +1,82 @@
+.how_website_work img {
+    width: 100%;
+}
+
+.how_website_work p {
+    text-align: center;
+}
+
+.a_simple_html_document {
+    font-family: 'Ubuntu';
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.5rem .5rem;
+}
+
+.a_simple_html_document-code_screen {
+    padding: .25rem;
+    border: .1rem solid black;
+}
+
+/* .tip-outer {
+    border: .1rem solid black;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    padding: .75rem .25rem;
+    background-color: gray;
+}
+
+.tip-outer h4 {
+    margin: 0 auto;
+    color: white;
+}
+
+.tip-inner {
+    border: .1rem solid black;
+    background-color: white;
+    padding: 0 .25rem;
+}
+
+.tip-inner p {
+    margin: 0 auto;
+} */
+
+.a_simple_html_document {
+    margin-bottom: 1rem;
+}
+
+.a_simple_html_document-code_screen {
+    border-radius: .25rem;
+    padding: 1.5rem .75rem;
+    background-color: grey;
+}
+
+.a_simple_html_document-code_screen h2 {
+    margin: 0 auto;
+    color: white;
+}
+
+.a_simple_html_document-code_screen-box {
+    border-left: .25rem solid green;
+    background-color: white;
+    padding: .25rem;
+    line-height: 1.5rem;
+}
+
+.tags_and_thier_uses {
+    font-size: 1rem;
+    font-family: 'Fira Code';
+    color: red;
+    background-color: #eee;
+}
+
+.note {
+    margin-bottom: 1rem;
+    background-color: #ffffcc;
+    padding: .25rem;
+    border-left: .25rem solid #ffeb3b;
+}
+
+.bigger_headings {
+    margin-bottom: 1rem;
+}

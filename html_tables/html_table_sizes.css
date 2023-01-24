@@ -1,0 +1,50 @@
+.different_table_sizes{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+table, td, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 1.36rem;
+}
+.table1{
+    width: 30%;
+}
+
+.table1 th:nth-child(2){
+    width: 60%;
+}
+
+.table2{
+    width: 40%;
+}
+.table2 th:nth-child(2){
+    width: 20%;
+}
+.table3{
+    width: 30%;
+}
+.table3 tr:last-child{
+    height: 50px;
+}
+.table3 th:first-child{
+    width: 60%;
+}
+.table4{
+    width: 50%;
+}
+.table4 td:nth-child(2){
+    width: 50%;
+}
+.table4 tr th:nth-child(2),
+.table4 tr td:nth-child(2){
+    background-color: orange;
+}
+.table5{
+    width: 50%;
+}
+.table5 tr:nth-child(2){
+    height: 100px;
+    background-color: orange;
+}

@@ -1,0 +1,19 @@
+table{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    width: 50%;
+    text-align: center;
+}
+td{
+    border: 1px solid black;
+}
+.intro_tables{
+    display: flex;
+    gap: 1rem;
+}
+.table1 td{
+    padding: 15px;
+}
+.table2{
+    border-spacing: 15px;
+}

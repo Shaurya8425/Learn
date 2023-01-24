@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Headings | html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="html_heading.css">
+    <link rel="stylesheet" href="media_query.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="main">
+            <ul>
+                <li class="stop_breaking"><i class="fa-solid fa-code"></i>&nbsp;LearnToCode</li>
+                <li class="list_item"></li>
+            </ul>
+            <ul class="list">
+                <li><a href="">Home</a>
+                    <hr class="active">
+                </li>
+                <li class="stop_breaking tutorials">
+                    <a href="">Tutorials&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="sign_up.html" class="signup">SignUp</a></li>
+                <li><a href="log_in.html" class="login">LogIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="thin_nav_strip">
+        <!-- <span class="sidebar_toggle">
+            <input type="checkbox" id="sidebar_toggle_checkbox">
+            <label for="sidebar_toggle_checkbox"><i class="fa-solid fa-bars" onmousedown="return false"
+                    onselectstart="return false"></i></label>
+        </span> -->
+        <a href="javascript:void(0);" onclick="sidebar_toggle()">Toggle<i class="fa-solid fa-bars"
+                onmousedown="return false" onselectstart="return false"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="html.html">HTML</a>
+        <a href="">CSS</a>
+        <a href="">JavaScript</a>
+    </div>
+    <main>
+        <!-- Sidebar Navigation,I'm excited about it -->
+        <div class="side_navbar-outer">
+            <div class="side_navbar-inner">
+                <h2>HTML Tutorials</h2>
+                <a href="html.html">HTML Introduction</a>
+                <a href="html_heading.html">HTML Headings</a>
+                <a href="html_paragraph.html">HTML Paragraphs</a>
+                <a href="html_formatting.html">HTML Formatting</a>
+
+                <!-- html links -->
+                <a href="javascript:void(0);" onclick="links_toggle()">HTML Links &nbsp;<label for="links_dropdown"><i
+                            class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="links_dropdown"> -->
+                <div class="sidebar_links_dropdown">
+                    <ul class="sidebar_links_dropdown_menu">
+                        <li><a href="html_links/html_links.html">Links</a></li>
+                        <li><a href="html_links/html_links_link_colors.html">Link Colors</a></li>
+                        <li><a href="html_links/html_links_link_bookmarks.html">Link Bookmarks</a></li>
+                    </ul>
+                </div>
+
+                <!-- html images -->
+                <a href="javascript:void(0);" onclick="images_toggle()">HTML Images &nbsp;<label
+                        for="images_dropdown"><i class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="images_dropdown"> -->
+                <div class="sidebar_images_dropdown">
+                    <ul class="sidebar_images_dropdown_menu">
+                        <li><a href="html_images/html_images.html">Images</a></li>
+                        <li><a href="html_images/html_image_maps.html">Image Map</a></li>
+                        <li><a href="html_images/html_background_images.html">Background Images</a></li>
+                        <li><a href="html_images/html_picture_element.html">The Picture Element</a></li>
+                    </ul>
+                </div>
+
+                <!-- html tables -->
+                <a href="javascript:void(0)" onclick="tables_toggle()">HTML Tables &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown tables_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_tables/html_tables.html">HTML Tables</a></li>
+                        <li><a href="html_tables/html_table_borders.html">Table Borders</a></li>
+                        <li><a href="html_tables/html_table_sizes.html">Table Sizes</a></li>
+                        <li><a href="html_tables/html_table_headers.html">Table Headers</a></li>
+                        <li><a href="html_tables/html_table_padding_spacing.html">Padding & Spacing</a></li>
+                        <li><a href="html_tables/html_table_colspan_rowspan.html">Colspan & Rowspan</a></li>
+                        <li><a href="html_tables/html_table_styling.html">Table Styling</a></li>
+                        <li><a href="html_tables/html_table_colgroup.html">Table Colgroup</a></li>
+                    </ul>
+                </div>
+
+                <!-- html lists -->
+                <a href="javascript:void(0)" onclick="lists_toggle()">HTML Lists &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown lists_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_lists/lists.html">Lists</a></li>
+                        <li><a href="html_lists/html_unordered_list.html">Unordered Lists</a></li>
+                        <li><a href="html_lists/html_ordered_lists.html">Ordered Lists</a></li>
+                        <li><a href="html_lists/html_other_lists.html">Other Lists</a></li>
+                    </ul>
+                </div>
+
+                <a href="html_block_inline.html">HTML Block & Inline</a>
+                <a href="html_class.html">HTML Classes</a>
+                <a href="html_id.html">HTML Id</a>
+                <a href="html_iframe.html">HTML Iframes</a>
+                <a href="html_javascript.html">HTML JavScript</a>
+                <a href="html_file_path.html">HTML File Paths</a>
+                <a href="html_head.html">HTML Head</a>
+                <a href="html_layout.html">HTML Layout</a>
+                <a href="html_responsive.html">HTML Responsive</a>
+ 
+            </div>
+        </div>
+        <div class="main_content">
+            <h2>HTML headings</h2>
+            <div class="previous_next">
+                <a href="html.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_paragraph.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <hr class="line">
+            <div class="html_heading_intro">
+                <p>There are total 6 headings in html. They help you in titles & subtitles that you want to display in your web page.</p>
+            </div>
+            <hr class="line">
+            <div class="heading-code_screen">
+                <h2 class="what_a_coincident">Example:</h2>
+                <div class="heading-code_screen-box-exception heading-code_screen-box">
+                    <span>
+                        <span><h1>Heading 1</h1></span>
+                    </span>
+                    <span>
+                        <span><h2>Heading 2</h2></span>
+                    </span>
+                    <span>
+                        <span><h3>Heading 3</h3></span>
+                    </span>
+                    <span>
+                        <span><h4>Heading 4</h4></span>
+                    </span>
+                    <span>
+                        <span><h5>Heading 5</h5></span>
+                    </span>
+                    <span>
+                        <span><h6>Heading 6</h6></span>
+                    </span>
+                </div>
+            </div>
+            <div class="html_headings_details">
+                <span>
+                    <span>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags. Their "importance order" follows thier precedence of size which is 1 to 6.</span>
+                </span>
+            </div>
+            <div class="heading-code_screen">
+                <h2>Example:</h2>
+                <div class=" heading-code_screen-box">
+                    <span>
+                        <span><span class="blue">&lt;</span><span class="brown">h1</span><span class="blue">&gt;</span>Heading 1 <span class="blue">&lt;</span><span class="brown">h1</span><span class="blue">&gt;</span></span>
+                    </span> <br>
+                    <span>
+                        <span><span class="blue">&lt;</span><span class="brown">h2</span><span class="blue">&gt;</span>Heading 2 <span class="blue">&lt;</span><span class="brown">h2</span><span class="blue">&gt;</span></span>
+                    </span> <br>
+                    <span>
+                        <span><span class="blue">&lt;</span><span class="brown">h3</span><span class="blue">&gt;</span>Heading 3 <span class="blue">&lt;</span><span class="brown">h3</span><span class="blue">&gt;</span></span>
+                    </span> <br>
+                    <span>
+                        <span><span class="blue">&lt;</span><span class="brown">h4</span><span class="blue">&gt;</span>Heading 4 <span class="blue">&lt;</span><span class="brown">h4</span><span class="blue">&gt;</span></span>
+                    </span> <br>
+                    <span>
+                        <span><span class="blue">&lt;</span><span class="brown">h5</span><span class="blue">&gt;</span>Heading 5 <span class="blue">&lt;</span><span class="brown">h5</span><span class="blue">&gt;</span></span>
+                    </span> <br>
+                    <span>
+                        <span><span class="blue">&lt;</span><span class="brown">h6</span><span class="blue">&gt;</span>Heading 6 <span class="blue">&lt;</span><span class="brown">h6</span><span class="blue">&gt;</span></span>
+                    </span>
+                </div>
+                <div class="link_to_code_editor">
+                    <a href="codeEditor/index.html" target="_blank">Try it Yourself</a>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="headings_are_important">
+                <h2>Headings are important</h2>
+                <span>
+                    Search engines use the headings to index the structure and content of our web pages.
+                </span> <br>
+                <span>
+                    Users often skim a page by its headings. It is important to use headings to show the document structure.
+                </span> <br>
+                <span>
+                    <span class="styling_the_span">&lt;h1&gt;</span> headings should be used for main headings, followed by <span class="styling_the_span">&lt;h1&gt;</span> headings, then the less important <span class="styling_the_span">&lt;h3&gt;</span>, and so on.
+                </span>
+            </div>
+            <div class="note">
+                <p>
+                    <b>Note:</b> Use HTML headings for headings only. Don't use headings to make text <b>BIG</b> or <b>bold</b>.
+                </p>
+            </div>
+            <hr class="line">
+            <div class="bigger_headings">
+                <h2>Bigger Headings</h2>
+                <span>
+                    Each HTML heading has a default size. However, you can specify the size for any heading with the <span class="styling_the_span">style</span> attribute, using the CSS <span class="styling_the_span">font-size</span> property:
+                </span> <br>
+            </div>
+            <div class="heading-code_screen">
+                <h2>Example</h2>
+                <div class="heading-code_screen-box">
+                    <span>
+                        <span class="blue">&lt;</span><span class="brown">h1</span> <span class="orangered">style</span>=<span class="blue">"font-size:60px;"&gt;</span>Heading 1<span class="blue">&lt;</span><span class="brown">/h1</span><span class="blue">&gt;</span>
+                    </span>
+                </div>
+                <div class="link_to_code_editor">
+                    <a href="codeEditor/index.html" target="_blank">Try it Yourself</a>
+                </div>
+            </div>
+            <div class="previous_next">
+                <a href="html.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_paragraph.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <!-- Footer -->
+            <hr class="line">
+            <div class="footer">
+                <button onclick="report_error_toggle()">Report Error</button>
+                <div class="report_error">
+                    <h3>Report error:</h3>
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail: <span>shaurya.y321@gmail.com</span></p>
+                </div>
+                <div class="forum_about">
+                    <a href="">Forum</a> | <a href="about.html">About</a>
+                </div>
+                <div class="paragraphs">
+                    <p>LearnToCode is optimized for learning and training. Examples might be simplified to improve reading
+                        and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but we
+                        cannot warrant full correctness of all content. While using LearnToCode, you agree to have read and
+                        accepted our <a href="">terms of use</a>, <a href="">cookie and privacy policy</a>.</p>
+                    <p><a href="">Copyright 1999-2022</a> by Auxilium Info. All Rights Reserved. <a href="">LearnToCode is
+                            Powered by Auxilium</a></p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images | html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="html_images.css">
+    <link rel="stylesheet" href="../media_query.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="main">
+            <ul>
+                <li class="stop_breaking"><i class="fa-solid fa-code"></i>&nbsp;LearnToCode</li>
+                <li class="list_item"></li>
+            </ul>
+            <ul class="list">
+                <li><a href="">Home</a>
+                </li>
+                <li class="stop_breaking tutorials">
+                    <a href="">Tutorials&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                    <hr class="active">
+                    <ul class="dropdown">
+                        <li><a href="../html.html">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="../sign_up.html" class="signup">SignUp</a></li>
+                <li><a href="../log_in.html" class="login">LogIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="thin_nav_strip">
+        <a href="javascript:void(0);" onclick="sidebar_toggle()">Toggle<i class="fa-solid fa-bars"
+                onmousedown="return false" onselectstart="return false"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="html.html">HTML</a>
+        <a href="">CSS</a>
+        <a href="">JavaScript</a>
+    </div>
+    <main>
+        <!-- Sidebar Navigation,I'm excited about it -->
+        <div class="side_navbar-outer">
+            <div class="side_navbar-inner">
+                <h2>HTML Tutorials</h2>
+                <a href="../html.html">HTML Introduction</a>
+                <a href="../html_heading.html">HTML Headings</a>
+                <a href="../html_paragraph.html">HTML Paragraphs</a>
+                <a href="../html_formatting.html">HTML Formatting</a>
+
+                <!-- html links -->
+                <a href="javascript:void(0);" onclick="links_toggle()">HTML Links &nbsp;<label for="links_dropdown"><i
+                            class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="links_dropdown"> -->
+                <div class="sidebar_links_dropdown">
+                    <ul class="sidebar_links_dropdown_menu">
+                        <li><a href="../html_links/html_links.html">Links</a></li>
+                        <li><a href="../html_links/html_links_link_colors.html">Link Colors</a></li>
+                        <li><a href="../html_links/html_links_link_bookmarks.html">Link Bookmarks</a></li>
+                    </ul>
+                </div>
+
+                <!-- html images -->
+                <a href="javascript:void(0);" onclick="images_toggle()">HTML Images &nbsp;<label
+                        for="images_dropdown"><i class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="images_dropdown"> -->
+                <div class="sidebar_images_dropdown">
+                    <ul class="sidebar_images_dropdown_menu">
+                        <li><a href="html_images.html">Images</a></li>
+                        <li><a href="html_image_maps.html">Image Map</a></li>
+                        <li><a href="html_background_images.html">Background Images</a></li>
+                        <li><a href="html_picture_element.html">The Picture Element</a></li>
+                    </ul>
+                </div>
+
+                <!-- html tables -->
+                <a href="javascript:void(0)" onclick="tables_toggle()">HTML Tables &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown tables_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="../html_tables/html_tables.html">HTML Tables</a></li>
+                        <li><a href="../html_tables/html_table_borders.html">Table Borders</a></li>
+                        <li><a href="../html_tables/html_table_sizes.html">Table Sizes</a></li>
+                        <li><a href="../html_tables/html_table_headers.html">Table Headers</a></li>
+                        <li><a href="../html_tables/html_table_padding_spacing.html">Padding & Spacing</a></li>
+                        <li><a href="../html_tables/html_table_colspan_rowspan.html">Colspan & Rowspan</a></li>
+                        <li><a href="../html_tables/html_table_styling.html">Table Styling</a></li>
+                        <li><a href="../html_tables/html_table_colgroup.html">Table Colgroup</a></li>
+                    </ul>
+                </div>
+
+                <!-- html lists -->
+                <a href="javascript:void(0)" onclick="lists_toggle()">HTML Lists &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown lists_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_lists/lists.html">Lists</a></li>
+                        <li><a href="html_lists/html_unordered_list.html">Unordered Lists</a></li>
+                        <li><a href="html_lists/html_ordered_lists.html">Ordered Lists</a></li>
+                        <li><a href="html_lists/html_other_lists.html">Other Lists</a></li>
+                    </ul>
+                </div>
+
+                <a href="../html_block_inline.html">HTML Block & Inline</a>
+                <a href="../html_class.html">HTML Classes</a>
+                <a href="../html_id.html">HTML Id</a>
+                <a href="../html_iframe.html">HTML Iframes</a>
+                <a href="../html_javascript.html">HTML JavScript</a>
+                <a href="../html_file_path.html">HTML File Paths</a>
+                <a href="../html_head.html">HTML Head</a>
+                <a href="../html_layout.html">HTML Layout</a>
+                <a href="../html_responsive.html">HTML Responsive</a>
+ 
+            </div>
+        </div>
+        <div class="main_content">
+            <h2>HTML Images</h2>
+            <div class="previous_next">
+                <a href="../html_links/html_links_link_bookmarks.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_image_maps.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <hr class="line">
+            <!-- Write your content here. -->
+            <p>Images can improve the design and the appearance of a web page.</p>
+            <div class="stacking_three_images">
+                <img src="unique_forrest.jpg" alt="Unique Forrest">
+                <img src="red_forrest.jpg" alt="Red Forrest">
+                <img src="black_forrest.jpg" alt=" Black Forrest">
+            </div>
+            <hr class="line">
+            <div class="alpha">
+                <h2>Example:</h2>
+                <div class="beta">
+                    <span>
+                        <span class="blue">&lt;</span><span class="brown">img</span> <span class="red">src</span>=<span
+                            class="blue">"file.jpg"</span> <span class="red">alt</span>=<span class="blue">"an
+                            image"&gt;</span>
+                    </span>
+                </div>
+                <div class="link_to_code_editor">
+                    <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                            class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="html_images_syntax">
+                <h2>HTML Images Syntax</h2>
+                <p>
+                    The HTML <span class="styling_the_span">&lt;img&gt;</span> tag is used to embed an image in a web
+                    page. <br>Images are not technically inserted into a web page; images are linked to web pages. The
+                    <span class="styling_the_span">&lt;img&gt;</span> tag creates a holding space for the referenced
+                    image. <br>The <span class="styling_the_span">&lt;img&gt;</span> tag is empty, it contains
+                    attributes only, and does not have a closing tag. <br>The <span
+                        class="styling_the_span">&lt;img&gt;</span> tag has two required attributes:
+                <ul>
+                    <li>src - Specifies the path to the image</li>
+                    <li>alt - Specifies an alternate text for the image</li>
+                </ul>
+                </p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"url"</span> <span
+                                class="red">alt</span>=<span class="blue">"alternatetext"&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="the_src_attribute">
+                <h2>The src Attribute</h2>
+                <p>The required <span class="styling_the_span">src</span> attribute specifies the path (URL) to the
+                    image.</p>
+                <div class="note">
+                    <p><b>Note:</b> When a web page loads, it is the browser, at that moment, that gets the image from a
+                        web server and inserts it into the page. Therefore, make sure that the image actually stays in
+                        the same spot in relation to the web page, otherwise your visitors will get a broken link icon.
+                        The broken link icon and the <span class="styling_the_span">alt</span> text are shown if the
+                        browser cannot find the image.</p>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="img_attributes_syntax">
+                <img src="forrest_lake_house.jpg" alt="">
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"forrest_lake_house.jpg"</span> <span
+                                class="red">alt</span>=<span class="blue">"Lake house in forrest"</span><span
+                                class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="the_alt_attribute">
+                <h2>The alt Attribute</h2>
+                <p>
+                    The required <span class="styling_the_span">alt</span> attribute provides an alternate text for an
+                    image, if the user for some reason cannot view it (because of slow connection, an error in the src
+                    attribute, or if the user uses a screen reader). <br>The value of the <span
+                        class="styling_the_span">alt</span> attribute should describe the image. <br>If a browser cannot
+                    find an image, it will display the value of the <span class="styling_the_span">alt</span> attribute.
+                </p>
+                <div class="note">
+                    <p><b>Tip:</b> A screen reader is a software program that reads the HTML code, and allows the user
+                        to "listen" to the content. Screen readers are useful for people who are visually impaired or
+                        learning disabled.</p>
+                </div>
+            </div>
+            <div class="image_size_width_and_height">
+                <p>You can use the <span class="styling_the_span">style</span> attribute to specify the width and height
+                    of an image.</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span class="blue">&lt;</span><span class="brown">img</span> <span class="red">src</span>=<span
+                            class="blue">"image.jpg"</span> <span class="red">alt</span>=<span class="blue">"an
+                            image"</span> <span class="red">style</span>=<span class="blue">"width:500px;
+                            height:600px;"&gt;</span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <p>Alternatively, you can use the <span class="styling_the_span">width</span> and <span
+                        class="styling_the_span">height</span> attributes:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span class="blue">&lt;</span><span class="brown">img</span> <span class="red">src</span>=<span
+                            class="blue">"image.jpg"</span> <span class="red">alt</span>=<span class="blue">"an
+                            image"</span> <span class="red">width</span>=<span class="blue">"500px"</span> <span
+                            class="red">height</span>=<span class="blue">"600px"&gt;</span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <p>The <span class="styling_the_span">width</span> and <span class="styling_the_span">height</span>
+                    attributes always define the width and height of the image in pixels.</p>
+                <div class="note">
+                    <p><b>Note:</b> Always specify the width and height of an image. If width and height are not
+                        specified, the web page might flicker while the image loads.</p>
+                </div>
+            </div>
+            <div class="width_and_height_or_style">
+                <p>The <span class="styling_the_span">width</span>, <span class="styling_the_span">height</span> and
+                    <span class="styling_the_span">style</span> attributes are all valid in HTML. <br>However, we
+                    suggest using the <span class="styling_the_span">style</span>attribute. It prevents styles sheets
+                    from changing the size of images:
+                </p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">!DOCTYPE </span><span
+                                class="red">html</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">html</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">head</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">style</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="brown">img</span> {
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="red">width</span>: <span class="blue">100%</span>;
+                        </span> <br>
+                        <span>
+                            }
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/style</span><span
+                                class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/head</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">body</span><span class="blue">&gt;</span>
+                        </span> <br> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">alt</span>=<span class="blue">"Google.jpg"</span> <span
+                                class="red">width</span>=<span class="blue">"128"</span> <span
+                                class="red">height</span>=<span class="blue">"128"</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"google.jpg"</span> <span
+                                class="red">alt</span>=<span class="blue">"It's google"</span> <span
+                                class="red">style</span>=<span class="blue">"width:128px; height:128px;"</span>
+                        </span> <br> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/body</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/html</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="images_in_another_folder">
+                <h2>Images in Another Folder</h2>
+                <p>If you have your images in a sub-folder, you must include the folder name in the <span
+                        class="styling_the_span">src</span> attribute:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">src</span>=<span
+                                class="blue">/images/google.gif"</span> <span class="red">alt</span>=<span
+                                class="blue">Google</span> <span class="red">style</span>=<span
+                                class="blue">"width:128px; height:128px;"</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="images_on_another_server_website">
+                <h2>Images on Another Server/Website</h2>
+                <p>Some web sites point to an image on another server. <br>To point to an image on another server, you
+                    must specify an absolute (full) URL in the <span class="styling_the_span">src</span> attribute:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span> = <span
+                                class="blue">"https:// www.example.com/images/image.jpg"</span> <span
+                                class="red">alt</span>=<span class="blue">"an image"</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="note">
+                    <p><b>Notes on external images:</b> External images might be under copyright. If you do not get
+                        permission to use it, you may be in violation of copyright laws. In addition, you cannot control
+                        external images; they can suddenly be removed or changed.</p>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="animated_images">
+                <h2>Animated Images</h2>
+                <p>HTML allows animated GIFs:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"programming.gif"</span> <span
+                                class="red">alt</span>=<span class="blue">"Computer Boy"</span> <span
+                                class="red">style</span>=<span class="blue">"width:48px; height:48px;"&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="images_as_a_link">
+                <h2>Images as a Link</h2>
+                <p>To use an image as a link, put the <span class="styling_the_span">&lt;img&gt;</span> tag inside the
+                    <span class="styling_the_span">&lt;a&gt;</span> tag:
+                </p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">a</span> <span
+                                class="red">href</span>=<span class="blue">"gif.html"&gt;</span>
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"mickey_mouse.gif"</span> <span
+                                class="red">alt</span>=<span class="blue">"I'm Mickey Mouse."</span> <span
+                                class="red">style</span>=<span class="blue">"width:42px; height:42px;"&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/a</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="image_floating">
+                <h2>Image Floating</h2>
+                <p>Use the CSS <span class="styling_the_span">float</span> property to let the image float to the right
+                    or to the left of a text:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"image1.jpg"</span> <span
+                                class="red">alt</span>=<span class="blue">"Image 1"</span> <span
+                                class="red">style</span>=<span class="blue">"float:right; width:42px;
+                                height:42px;"&gt;</span>
+                        </span> <br>
+                        <span>
+                            The image will float to the right of the text.
+                        </span>
+                        <span> <br>
+                            <span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"image2.jpg"</span> <span
+                                class="red">alt</span>=<span class="blue">"Image 2"</span> <span
+                                class="red">style</span>=<span class="blue">"float:left; width:42px;
+                                height:42px;"&gt;</span>
+                        </span> <br>
+                        <span>
+                            The image will float to the left of the text.
+                        </span>
+                        <span> <br>
+                            <span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="note">
+                    <p><b>Tip:</b> To learn more about CSS Float, read our <a href="">CSS Float Tutorial</a>.</p>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="common_image_formats">
+                <h2>Common Image Formats</h2>
+                <p>Here are the most common image file types, which are supported in all browsers (Chrome, Edge,
+                    Firefox, Safari, Opera):</p>
+                <table>
+                    <tr>
+                        <th>Abbreviation</th>
+                        <th>File Format</th>
+                        <th>File Extension</th>
+                    </tr>
+                    <tr>
+                        <td>APNG</td>
+                        <td>Animated Portable Network Graphics</td>
+                        <td>.apng</td>
+                    </tr>
+                    <tr>
+                        <td>GIF</td>
+                        <td>Graphics Interchange Format</td>
+                        <td>.gif</td>
+                    </tr>
+                    <tr>
+                        <td>ICO</td>
+                        <td>Microsoft Icon</td>
+                        <td>.ico, .cur</td>
+                    </tr>
+                    <tr>
+                        <td>JPEG</td>
+                        <td>Joint Photographic Expert Group</td>
+                        <td>.jpg, .jpeg, jfif, pjpeg, .pjp</td>
+                    </tr>
+                    <tr>
+                        <td>PNG</td>
+                        <td>Portable Network Graphics</td>
+                        <td>.png</td>
+                    </tr>
+                    <tr>
+                        <td>SVG</td>
+                        <td>Scalable Vector Graphics</td>
+                        <td>.svg</td>
+                    </tr>
+                </table>
+            </div>
+            <hr class="line">
+            <div class="chapter_summary">
+                <h2>Chapter Summary</h2>
+                <ul>
+                    <li>Use the HTML <span class="styling_the_span">&lt;img&gt;</span> element to define an image</li>
+                    <li>Use the HTML <span class="styling_the_span">src</span> attribute to define the URL of the image
+                    </li>
+                    <li>Use the HTML <span class="styling_the_span">alt</span> attribute to define an alternate text for
+                        an image, if it cannot be displayed</li>
+                    <li>Use the HTML <span class="styling_the_span">width</span> and <span
+                            class="styling_the_span">height</span> attributes or the CSS <span
+                            class="styling_the_span">width</span> and <span class="styling_the_span">height</span>
+                        properties to define the size of the image</li>
+                    <li>Use the CSS <span class="styling_the_span">float</span> property to let the image float to the
+                        left or to the right</li>
+                </ul>
+            </div>
+            <div class="note">
+                <p><b>Note:</b> Loading large images takes time, and can slow down your web page. Use images carefully.
+                </p>
+            </div>
+            <div class="previous_next">
+                <a href="../html_links/html_links_link_bookmarks.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_image_maps.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+
+
+            <hr class="line">
+            <div class="footer">
+                <button onclick="report_error_toggle()">Report Error</button>
+                <div class="report_error">
+                    <h3>Report error:</h3>
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail: <span>shaurya.y321@gmail.com</span></p>
+                </div>
+                <div class="forum_about">
+                    <a href="">Forum</a> | <a href="../about.html">About</a>
+                </div>
+                <div class="paragraphs">
+                    <p>LearnToCode is optimized for learning and training. Examples might be simplified to improve
+                        reading
+                        and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but
+                        we
+                        cannot warrant full correctness of all content. While using LearnToCode, you agree to have read
+                        and
+                        accepted our <a href="">terms of use</a>, <a href="">cookie and privacy policy</a>.</p>
+                    <p><a href="">Copyright 1999-2022</a> by Auxilium Info. All Rights Reserved. <a href="">LearnToCode
+                            is
+                            Powered by Auxilium</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../script.js"></script>
+</body>
+
+</html>

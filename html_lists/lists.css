@@ -1,0 +1,7 @@
+ul, ol{
+    margin-top: 0;
+}
+.intro_lists{
+    display: flex;
+    gap: 2rem;
+}

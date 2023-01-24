@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="codemirror-5.65.9/lib/codemirror.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="editor-menu">
+        <button class="btn007 btn-dark">Dark Mode</button>
+        <button class="btn007 btn-light">Light Mode</button>
+        <button class="btn007 btn-run">Run&nbsp;<i class="fa-solid fa-play"></i></button>
+        <div class="live">
+            <label for="live" onmousedown='return false;' class="label">Live</label>
+            <input type="checkbox" id="live">
+        </div>
+    </div>
+    <div class="container007">
+        <div class="left">
+            <!-- <div class="editor" contenteditable="" >
+
+            </div> -->
+            <div class="editor codemirror-textarea" contenteditable="">
+                <span>
+                    <span class="blue">&lt;</span>!DOCTYPE<span class="blue">&gt;</span>                    
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">html</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">head</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">title</span><span class="blue">&gt;</span>
+                </span>
+                Sample 1
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">/title</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">link</span> <span class="red">rel</span>=<span class="blue">"stylesheet"</span> <span class="red">href</span>=<span class="blue">"sample.css"</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">style</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">/style</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">/head</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">body</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">img</span> <span class="blue">src</span>=<span class="blue">"ben10.png"&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">h1</span><span class="blue">&gt;</span>
+                </span>
+                This is Heading h1
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">/h1</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>
+                </span>
+                This is a paragraph
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+                </span>
+                <span> <br>
+                    <span class="blue">&lt;</span><span class="brown">/body</span><span class="blue">&gt;</span>
+                </span> <br>
+                <span>
+                    <span class="blue">&lt;</span><span class="brown">/html</span><span class="blue">&gt;</span>
+                </span>
+            </div>
+        </div>
+        <div class="bar" title="Click and Drag"><i class="fa-solid fa-grip-lines-vertical"></i></div>
+        <div class="right">
+            <iframe src="" frameborder="0" class="iframe"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="codemirror-5.65.9/lib/codemirror.js"></script>
+    <script>
+        $(document).ready(function () {
+            //code here...
+            var code = $(".codemirror-textarea")[0];
+            var editor = CodeMirror.fromTextArea(code, {
+                lineNumbers: true
+            });
+        });
+    </script>
+</body>
+
+</html>

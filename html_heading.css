@@ -1,0 +1,33 @@
+.what_a_coincident{
+    margin: 0 auto;
+    color: white;
+}
+.heading-code_screen{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding: 1.25rem .5rem;
+    background-color: grey;
+    border-radius: .25rem;
+}
+.heading-code_screen-box-exception, .heading-code_screen-box{
+    border: 1px solid black;
+    font-family: 'Ubuntu';
+    background-color: white;
+    padding: .25rem;
+    border-radius: .25rem;
+    font-weight: bold;
+}
+.heading-code_screen-box-exception{
+    line-height: 2.5rem;
+}
+.heading-code_screen-box h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+.html_headings_details{
+    margin-bottom: 1rem;
+}
+
+.headings_are_important{
+    padding: .25rem;
+    margin-bottom: 1rem;
+}

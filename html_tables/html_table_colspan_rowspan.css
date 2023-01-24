@@ -1,0 +1,23 @@
+table{
+    border: 1px solid black;
+    width: 32%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+td{
+    border: 1px solid black;
+}
+.three_tables{
+    display: flex;
+    gap: 1rem;
+}
+@media (max-width:410px){
+    .three_tables{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    table{
+        width: 80%;
+    }
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML links | html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="html_links.css">
+    <link rel="stylesheet" href="../media_query.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+        <nav class="main">
+            <ul>
+                <li class="stop_breaking"><i class="fa-solid fa-code"></i>&nbsp;LearnToCode</li>
+                <li class="list_item"></li>
+            </ul>
+            <ul class="list">
+                <li><a href="">Home</a>
+                </li>
+                <li class="stop_breaking tutorials">
+                    <a href="">Tutorials&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                    <hr class="active">
+                    <ul class="dropdown">
+                        <li><a href="../html.html">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="../sign_up.html" class="signup">SignUp</a></li>
+                <li><a href="../log_in.html" class="login">LogIn</a></li>
+            </ul>
+        </nav>
+        <!-- thin nav strip -->
+        <div class="thin_nav_strip">
+            <a href="javascript:void(0);" onclick="sidebar_toggle()">Toggle<i class="fa-solid fa-bars"
+                    onmousedown="return false" onselectstart="return false"></i></a>
+            <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="../html.html">HTML</a>
+            <a href="">CSS</a>
+            <a href="">JavaScript</a>
+        </div>
+    <main>
+        <!-- Sidebar Navigation,I'm excited about it -->
+        <div class="side_navbar-outer">
+            <div class="side_navbar-inner">
+                <h2>HTML Tutorials</h2>
+                <a href="../html.html">HTML Introduction</a>
+                <a href="../html_heading.html">HTML Headings</a>
+                <a href="../html_paragraph.html">HTML Paragraphs</a>
+                <a href="../html_formatting.html">HTML Formatting</a>
+
+                <!-- html links -->
+                <a href="javascript:void(0);" onclick="links_toggle()">HTML Links &nbsp;<label for="links_dropdown"><i
+                            class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="links_dropdown"> -->
+                <div class="sidebar_links_dropdown">
+                    <ul class="sidebar_links_dropdown_menu">
+                        <li><a href="html_links.html">Links</a></li>
+                        <li><a href="html_links_link_colors.html">Link Colors</a></li>
+                        <li><a href="html_links_link_bookmarks.html">Link Bookmarks</a></li>
+                    </ul>
+                </div>
+
+                <!-- html images -->
+                <a href="javascript:void(0);" onclick="images_toggle()">HTML Images &nbsp;<label
+                        for="images_dropdown"><i class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="images_dropdown"> -->
+                <div class="sidebar_images_dropdown">
+                    <ul class="sidebar_images_dropdown_menu">
+                        <li><a href="../html_images/html_images.html">Images</a></li>
+                        <li><a href="../html_images/html_image_maps.html">Image Map</a></li>
+                        <li><a href="../html_images/html_background_images.html">Background Images</a></li>
+                        <li><a href="../html_images/html_picture_element.html">The Picture Element</a></li>
+                    </ul>
+                </div>
+
+                <!-- html tables -->
+                <a href="javascript:void(0)" onclick="tables_toggle()">HTML Tables &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown tables_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="../html_tables/html_tables.html">HTML Tables</a></li>
+                        <li><a href="../html_tables/html_table_borders.html">Table Borders</a></li>
+                        <li><a href="../html_tables/html_table_sizes.html">Table Sizes</a></li>
+                        <li><a href="../html_tables/html_table_headers.html">Table Headers</a></li>
+                        <li><a href="../html_tables/html_table_padding_spacing.html">Padding & Spacing</a></li>
+                        <li><a href="../html_tables/html_table_colspan_rowspan.html">Colspan & Rowspan</a></li>
+                        <li><a href="../html_tables/html_table_styling.html">Table Styling</a></li>
+                        <li><a href="../html_tables/html_table_colgroup.html">Table Colgroup</a></li>
+                    </ul>
+                </div>
+
+                <!-- html lists -->
+                <a href="javascript:void(0)" onclick="lists_toggle()">HTML Lists &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown lists_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="../html_lists/lists.html">Lists</a></li>
+                        <li><a href="../html_lists/html_unordered_list.html">Unordered Lists</a></li>
+                        <li><a href="../html_lists/html_ordered_lists.html">Ordered Lists</a></li>
+                        <li><a href="../html_lists/html_other_lists.html">Other Lists</a></li>
+                    </ul>
+                </div>
+
+                <a href="../html_block_inline.html">HTML Block & Inline</a>
+                <a href="../html_class.html">HTML Classes</a>
+                <a href="../html_id.html">HTML Id</a>
+                <a href="../html_iframe.html">HTML Iframes</a>
+                <a href="../html_javascript.html">HTML JavScript</a>
+                <a href="../html_file_path.html">HTML File Paths</a>
+                <a href="../html_head.html">HTML Head</a>
+                <a href="../html_layout.html">HTML Layout</a>
+                <a href="../html_responsive.html">HTML Responsive</a>
+ 
+            </div>
+        </div>
+        <div class="main_content">
+            <h2>HTML Links</h2>
+            <div class="previous_next">
+                <a href="../html_formatting.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_links_link_colors.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <hr class="line">
+            <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+            <hr class="line">
+            <div class="html_links_hyperlink">
+                <h2>HTML Links - Hyperlinks</h2>
+                <p>HTML Links are Hyperlinks. <br>You can click on a link and jump to another document. <br>When you
+                    move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+            </div>
+            <div class="note">
+                <p>Note: A link does not have to be text. A link can be an image or any other HTML element!</p>
+            </div>
+            <hr class="line">
+            <div class="html_links_syntax">
+                <h2>HTML Links - Syntax</h2>
+                <span>
+                    The HTML <span class="styling_the_span">&lt;a&gt;</span> tag defines a hyperlink. It has the
+                    following syntax:
+                </span> <br>
+                <div class="alpha">
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">a</span> <span
+                                class="red">href</span>=<span class="blue">"url"&gt;</span>link text<span
+                                class="blue">&lt;</span><span class="brown">/a</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <span>
+                    The most important attribute of the <span class="styling_the_span">&lt;a&gt;</span> element is the
+                    <span class="styling_the_span">href</span> attribute, which indicates the link's destination.
+                </span> <br>
+                <span>
+                    The <i>link text</i> is the part that will be visible to the reader.
+                </span> <br>
+                <span>
+                    Clicking on the link text, will send the reader to the specified URL address.
+                </span>
+                <div class="alpha">
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">a</span> <span
+                                class="red">href</span> = <span class="blue">"https://www.google.com"&gt;</span> Visit
+                            Google! <span class="blue">&lt;</span><span class="brown">/a</span><span
+                                class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <span>
+                    By default, links will appear as follows in all browsers:
+                </span>
+                <ul>
+                    <li>An unvisited link is underlined and blue</li>
+                    <li>A visited link is underlined and purple</li>
+                    <li>An active link is underlined and red</li>
+                </ul>
+                <div class="note">
+                    <b>Tip:</b> Links can of course be styled with CSS, to get another look!
+                </div>
+            </div>
+            <hr class="line">
+            <div class="html_links_the_target_attribute">
+                <h2>HTML Links - The target Attribute</h2>
+                <p>
+                    By default, the linked page will be displayed in the current browser window. To change this, you
+                    must specify another target for the link. <br>
+                    The <span class="styling_the_span">target</span> attribute specifies where to open the linked
+                    document. <br>
+                    The <span class="styling_the_span">target</span> attribute can have one of the following values:
+                <ul>
+                    <li><span class="styling_the_span">_self</span> (Default) - Opens the document in the same
+                        window/tab as it was clicked</li>
+                    <li><span class="styling_the_span">-blank</span> - Opens the document in a new window or tab</li>
+                    <li><span class="styling_the_span">_parent</span> - Opens the document in the parent frame</li>
+                    <li><span class="styling_the_span">_top</span> - Opens the document in the full body of the window
+                    </li>
+                </ul>
+                </p>
+            </div>
+            <hr class="line">
+            <div class="absolute_and_relative_urls">
+                <h2>Absolute URLs vs. Relative URLs</h2>
+                <p>Both examples above are using an absolute URL (a full web address) in the <span
+                        class="styling_the_span">href</span> attribute.<br>A local link (a link to a page within the
+                    same website) is specified with a relative URL (without the "https://www" part):</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">h2</span><span
+                                class="blue">&gt;</span>Absolute URLs<span class="blue">&lt;</span><span
+                                class="brown">/h2</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">a</span> <span
+                                class="red">href</span>=<span class="blue">"https://www.isro.gov.in/"&gt;</span> Indian
+                            Space Research Organization <span class="blue">&lt;</span><span class="brown">/a</span><span
+                                class="blue">&gt;</span>
+                        </span> <br> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">h2</span><span
+                                class="blue">&gt;</span>Relative URLs<span class="blue">&lt;</span><span
+                                class="brown">/h2</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">a</span> <span
+                                class="red">href</span>=<span class="blue">"index.html"&gt;</span>Indian Space Research
+                            Organization <span class="blue">&lt;</span><span class="brown">/a</span><span
+                                class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="more_on_absolute_and_relative_urls">
+                <div class="alpha">
+                    <p class="stop_it">Use a full URL to link a web page:</p>
+                    <div class="beta">
+                        <span class="blue">&lt;</span><span class="brown">a</span> <span class="red">href</span>=<span
+                            class="blue">"https://www.google.com"&gt;</span> www.google.com <span
+                            class="blue">&lt;</span><span class="brown">/a</span><span class="blue">&gt;</span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="alpha">
+                    <p class="stop_it">Link to a Page located in the html folder on the current web site:</p>
+                    <div class="beta">
+                        <span class="blue">&lt;</span><span class="brown">a</span> <span class="red">href</span>=<span
+                            class="blue">"/folder/file.html"&gt;</span>HTML Tutorials<span class="blue">&lt;</span><span
+                            class="brown">/a</span><span class="blue">&gt;</span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="alpha">
+                    <p class="stop_it">Link to a page located in the same folder as the current page:</p>
+                    <div class="beta">
+                        <span class="blue">&lt;</span><span class="brown">a</span> <span class="red">href</span>=<span
+                            class="blue">"file.html"&gt;</span>www.google.com<span class="blue">&lt;</span><span
+                            class="brown">/a</span><span class="blue">&gt;</span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="note">
+                <p>Note: You can read more about file paths in the chapter HTML File Paths</p>
+            </div>
+            <hr class="line">
+            <div class="html_links_use_an_image_as_a_link">
+                <h2>HTML Links - Use an Image as a Link</h2>
+                <p>To use an image as a link, just put the <span class="styling_the_span">&lt;img&gt;</span> tag inside
+                    the <span class="styling_the_span">&lt;a&gt;</span> tag:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">a </span><span
+                                class="red">href</span>=<span class="blue">"default.asp"&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"google.gif"<span class="blue">&gt;</span>
+                            </span> <br>
+                            <span>
+                            </span><span class="blue">&lt;</span><span class="brown">/a</span><span
+                                class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="link_to_an_email_address">
+                <h2>Link to an Email Address</h2>
+                <p>
+                    Use <span class="styling_the_span">mailto:</span> inside the <span
+                        class="styling_the_span">href</span> attribute to create a link that opens the user's email
+                    program (to let them send a new email):
+                </p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">a</span> <span
+                                class="red">href</span> = <span class="blue">"mailto:hello@world.com"&gt;</span> Send an
+                            Email<span class="blue">&lt;</span><span class="brown">/a</span><span
+                                class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="button_as_a_link">
+                <h2>Button as a Link</h2>
+                <p>To use an HTML button as a link, you have to add some JavaScript code. <br>JavaScript allows you to
+                    specify what happens at certain events, such as a click of a button:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">button</span> <span
+                                class="red">onclick</span> = <span class="blue">"document.location = </span><span
+                                class="blue">'default.asp'"<span class="blue">&gt;</span> </span>HTML Tutorial<span
+                                class="blue">&lt;</span><span class="brown">button<span class="blue">&gt;</span>
+                            </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="note">
+                <p><b>Tip:</b>Learn more about JavaScript in our JavaScript Tutorial.</p>
+            </div>
+            <hr class="line">
+            <div class="link_titles">
+                <h2>Link Titles</h2>
+                <p>The <span class="styling_the_span">title</span> attribute specifies extra information about an
+                    element. The information is most often shown as a tooltip text when the mouse moves over the
+                    element.</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">a</span> <span
+                                class="red">href</span>=<span class="blue">"https://www.google.com/"</span> <span
+                                class="red">title</span>=<span class="blue">"Google"&gt;</span>You want to search!<span
+                                class="blue">&lt;</span><span class="brown">/a</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="chapter_summary">
+                <h2>Chapter Summary</h2>
+                <ul>
+                    <li>Use the <span class="styling_the_span">&lt;a&gt;</span> element to define a link</li>
+                    <li>Use the <span class="styling_the_span">href</span> attribute to define the link address.</li>
+                    <li>Use the <span class="styling_the_span">target</span> attribute to define where to open the
+                        linked document</li>
+                    <li>Use the <span class="styling_the_span">&lt;img&gt;</span> element (inside <span
+                            class="styling_the_span">&lt;a&gt;</span>) to use an image as a link</li>
+                    <li>Use the <span class="styling_the_span">mailto:</span> scheme inside the <span
+                            class="styling_the_span">href</span> attribute to create a link that opens the user's email
+                        program</li>
+                </ul>
+            </div>
+            <hr class="line">
+            <div class="previous_next">
+                <a href="../html_formatting.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_links_link_colors.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <!-- Footer -->
+            <hr class="line">
+            <div class="footer">
+                <button onclick="report_error_toggle()">Report Error</button>
+                <div class="report_error">
+                    <h3>Report error:</h3>
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail: <span>shaurya.y321@gmail.com</span></p>
+                </div>
+                <div class="forum_about">
+                    <a href="">Forum</a> | <a href="../about.html">About</a>
+                </div>
+                <div class="paragraphs">
+                    <p>LearnToCode is optimized for learning and training. Examples might be simplified to improve
+                        reading
+                        and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but
+                        we
+                        cannot warrant full correctness of all content. While using LearnToCode, you agree to have read
+                        and
+                        accepted our <a href="">terms of use</a>, <a href="">cookie and privacy policy</a>.</p>
+                    <p><a href="">Copyright 1999-2022</a> by Auxilium Info. All Rights Reserved. <a href="">LearnToCode
+                            is
+                            Powered by Auxilium</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../script.js"></script>
+</body>
+
+</html>

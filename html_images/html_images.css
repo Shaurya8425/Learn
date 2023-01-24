@@ -1,0 +1,40 @@
+.stacking_three_images{
+    display: flex;
+    justify-content: center;
+}
+.stacking_three_images img{
+    width: 32%;
+    object-fit: cover;
+}
+.img_attributes_syntax img{
+    height: 234px;
+    width: 100%;
+    display: block;
+    margin: .5rem auto;
+    object-position: center;
+    image-rendering: optimizeSpeed;
+    object-fit: cover;
+    border-radius: .25rem;
+}
+table{
+    width: 100%;
+}
+tr{
+    border-bottom: 1px solid black;
+}
+tr:hover{
+    background-color: yellow;
+    color: red;
+
+}
+tr:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+}
+tr:nth-child(even):hover {
+    background-color: yellow;
+}
+  
+/* th:nth-child(even),td:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+  } */
+

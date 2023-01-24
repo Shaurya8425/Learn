@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html formatting | html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="html_links.css">
+    <link rel="stylesheet" href="media_query.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="main">
+            <ul>
+                <li class="stop_breaking"><i class="fa-solid fa-code"></i>&nbsp;LearnToCode</li>
+                <li class="list_item"></li>
+            </ul>
+            <ul class="list">
+                <li><a href="">Home</a>
+                    <hr class="active">
+                </li>
+                <li class="stop_breaking tutorials">
+                    <a href="">Tutorials&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="sign_up.html" class="signup">SignUp</a></li>
+                <li><a href="log_in.html" class="login">LogIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="thin_nav_strip">
+        <a href="javascript:void(0);" onclick="sidebar_toggle()">Toggle<i class="fa-solid fa-bars"
+                onmousedown="return false" onselectstart="return false"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="html.html">HTML</a>
+        <a href="">CSS</a>
+        <a href="">JavaScript</a>
+    </div>
+    <main>
+        <!-- Sidebar Navigation,I'm excited about it -->
+        <div class="side_navbar-outer">
+            <div class="side_navbar-inner">
+                <h2>HTML Tutorials</h2>
+                <a href="html.html">HTML Introduction</a>
+                <a href="html_heading.html">HTML Headings</a>
+                <a href="html_paragraph.html">HTML Paragraphs</a>
+                <a href="html_formatting.html">HTML Formatting</a>
+
+                <!-- html links -->
+                <a href="javascript:void(0);" onclick="links_toggle()">HTML Links &nbsp;<label for="links_dropdown"><i
+                            class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="links_dropdown"> -->
+                <div class="sidebar_links_dropdown">
+                    <ul class="sidebar_links_dropdown_menu">
+                        <li><a href="html_links/html_links.html">Links</a></li>
+                        <li><a href="html_links/html_links_link_colors.html">Link Colors</a></li>
+                        <li><a href="html_links/html_links_link_bookmarks.html">Link Bookmarks</a></li>
+                    </ul>
+                </div>
+
+                <!-- html images -->
+                <a href="javascript:void(0);" onclick="images_toggle()">HTML Images &nbsp;<label
+                        for="images_dropdown"><i class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="images_dropdown"> -->
+                <div class="sidebar_images_dropdown">
+                    <ul class="sidebar_images_dropdown_menu">
+                        <li><a href="html_images/html_images.html">Images</a></li>
+                        <li><a href="html_images/html_image_maps.html">Image Map</a></li>
+                        <li><a href="html_images/html_background_images.html">Background Images</a></li>
+                        <li><a href="html_images/html_picture_element.html">The Picture Element</a></li>
+                    </ul>
+                </div>
+
+                <!-- html tables -->
+                <a href="javascript:void(0)" onclick="tables_toggle()">HTML Tables &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown tables_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_tables/html_tables.html">HTML Tables</a></li>
+                        <li><a href="html_tables/html_table_borders.html">Table Borders</a></li>
+                        <li><a href="html_tables/html_table_sizes.html">Table Sizes</a></li>
+                        <li><a href="html_tables/html_table_headers.html">Table Headers</a></li>
+                        <li><a href="html_tables/html_table_padding_spacing.html">Padding & Spacing</a></li>
+                        <li><a href="html_tables/html_table_colspan_rowspan.html">Colspan & Rowspan</a></li>
+                        <li><a href="html_tables/html_table_styling.html">Table Styling</a></li>
+                        <li><a href="html_tables/html_table_colgroup.html">Table Colgroup</a></li>
+                    </ul>
+                </div>
+
+                <!-- html lists -->
+                <a href="javascript:void(0)" onclick="lists_toggle()">HTML Lists &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown lists_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_lists/lists.html">Lists</a></li>
+                        <li><a href="html_lists/html_unordered_list.html">Unordered Lists</a></li>
+                        <li><a href="html_lists/html_ordered_lists.html">Ordered Lists</a></li>
+                        <li><a href="html_lists/html_other_lists.html">Other Lists</a></li>
+                    </ul>
+                </div>
+
+                <a href="html_block_inline.html">HTML Block & Inline</a>
+                <a href="html_class.html">HTML Classes</a>
+                <a href="html_id.html">HTML Id</a>
+                <a href="html_iframe.html">HTML Iframes</a>
+                <a href="html_javascript.html">HTML JavScript</a>
+                <a href="html_file_path.html">HTML File Paths</a>
+                <a href="html_head.html">HTML Head</a>
+                <a href="html_layout.html">HTML Layout</a>
+                <a href="html_responsive.html">HTML Responsive</a>
+ 
+            </div>
+        </div>
+        <div class="main_content">
+            <h2>HTML Text Formatting</h2>
+            <div class="previous_next">
+                <a href="html_paragraph.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_links/html_links.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <hr class="line">
+            <!-- Write your content here. -->
+            <p>HTML contains several elements for defining text with a special meaning.</p>
+            <hr class="line">
+            <div class="alpha">
+                <h2>Example:</h2>
+                <div class="beta">
+                    <span>
+                        <b>This text is bold</b>
+                    </span> <br>
+                    <span>
+                        <i>This text is italic</i>
+                    </span> <br>
+                    <span>
+                        This is <sub>subscript</sub> and <sup>superscript</sup>
+                    </span>
+                </div>
+                <div class="link_to_code_editor">
+                    <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                            class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="html_formatting_elements">
+                <h2>HTML Formatting Elements</h2>
+                <p>Formatting elements were designed to display special types of text:</p>
+                <ul>
+                    <li><span class="styling_the_span">&lt;b&gt;</span> - Bold text</li>
+                    <li><span class="styling_the_span">&lt;strong&gt;</span> - Important text</li>
+                    <li><span class="styling_the_span">&lt;i&gt;</span> - Italic text</li>
+                    <li><span class="styling_the_span">&lt;em&gt;</span> - Emphasized text</li>
+                    <li><span class="styling_the_span">&lt;mark&gt;</span> - Smaller text</li>
+                    <li><span class="styling_the_span">&lt;del&gt;</span> - Deleted text</li>
+                    <li><span class="styling_the_span">&lt;ins&gt;</span> - Inserted text</li>
+                    <li><span class="styling_the_span">&lt;sub&gt;</span> - Subscript text</li>
+                    <li><span class="styling_the_span">&lt;sup&gt;</span> - Supscript text</li>
+                </ul>
+            </div>
+            <div class="html_b_and_strong_elements">
+                <h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2>
+                <p>The HTML <span class="styling_the_span">&lt;b&gt;</span> element defines bold text, without any extra
+                    imporatance.</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span class="blue">&lt;</span><span class="brown">b</span><span class="blue">&gt;</span>This
+                        text is bold<span class="blue">&lt;</span><span class="brown">/b</span><span
+                            class="blue">&gt;</span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <p>The HTML <span class="styling_the_span">&lt;strong&gt;</span> element defines text with strong
+                    importance. The content inside is typically displayed in bold.</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">strong</span><span
+                                class="blue">&gt;</span>This text is important!<span class="blue">&lt;</span><span
+                                class="brown">/strong</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="html_i_and_em_elements">
+                <h2>HTML &lt;i&gt; and &lt;em&gt; Elements</h2>
+                <p>
+                    The The HTML <span class="styling_the_span">&lt;i&gt;</span> element defines a part of text in an
+                    alternate voice or mood. The content inside is typically displayed in italic.
+                </p>
+                <div class="note">
+                    <p><b>Tip:</b> The <span class="styling_the_span">&lt;i&gt;</span> tag is often used to indicate a
+                        technical term, a phrase from another language, a thought, a ship name, etc.</p>
+                </div>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">i</span><span class="blue">&gt;</span>This
+                            text is italic<span class="blue">&lt;</span><span class="brown">/i</span><span
+                                class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <p>The HTML <span class="styling_the_span">&lt;em&gt;</span> element defines emphasized text. The content inside is typically displayed in italic.</p>
+                <div class="note">
+                    <p><b>Tip:</b> A screen reader will pronounce the words in <span class="styling_the_span">&lt;em&gt;</span> with an emphasis, using verbal stress.</p>
+                </div>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span class="blue">&lt;</span><span class="brown">em</span><span class="blue">&gt;</span>This text is emphasized<span class="blue">&lt;</span><span class="brown">/em</span><span class="blue">&gt;</span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+            </div>
+            <hr class="line">
+            <div class="html_small_element">
+                <h2>HTML &lt;small&gt; Element</h2>
+                <p>The HTML <span class="styling_the_span">&lt;small&gt;</span> element defines smaller text:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">small</span><span class="blue">&gt;</span>This is some smaller text.<span class="blue">&lt;</span><span class="brown">/small</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="html_mark_element">
+                <h2>HTML &lt;mark&gt; Element</h2>
+                <p>The HTML <span class="styling_the_span">&lt;mark&gt;</span> element defines text that should be marked or highlighted:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>Do not forget to buy <span class="blue">&lt;</span><span class="brown">mark</span><span class="blue">&gt;</span>milk<span class="blue">&lt;</span><span class="brown">/mark</span><span class="blue">&gt;</span> today.<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="html_del_element">
+                <h2>HTML &lt;del&gt; Element</h2>
+                <p>The HTML <span class="styling_the_span">&lt;del&gt;</span> element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>My favorite color is <span class="blue">&lt;</span><span class="brown">del</span><span class="blue">&gt;</span>blue<span class="blue">&lt;</span><span class="brown">/del</span><span class="blue">&gt;</span> red.<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="html_ins_element">
+                <h2>HTML &lt;ins&gt; Element</h2>
+                <p>The HTML <span class="styling_the_span">&lt;del&gt;</span> element defines a text that has been inserted into a document. Browsers will usually underline inserted text:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>How are you doing? <span class="blue">&lt;</span><span class="brown">del</span><span class="blue">&gt;</span>Mr.<span class="blue">&lt;</span><span class="brown">/del</span><span class="blue">&gt;</span> <span class="blue">&lt;</span><span class="brown">ins</span><span class="blue">&gt;</span>Khanna<span class="blue">&lt;</span><span class="brown">/ins</span><span class="blue">&gt;</span>.<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="html_sub_element">
+                <h2>HTML &lt;sub&gt; Element</h2>
+                <p>The HTML <span class="styling_the_span">&lt;sub&gt;</span> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H<sub>2</sub>O:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>This is <span class="blue">&lt;</span><span class="brown">sub</span><span class="blue">&gt;</span>subscripted<span class="brown">/sub</span><span class="blue">&gt;</span> text.<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="html_sup_element">
+                <h2>HTML &lt;sup&gt; Element</h2>
+                <p>The HTML <span class="styling_the_span">&lt;sup&gt;</span> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW:</p>
+            </div>
+            <!-- Code screen start. -->
+            <div class="alpha">
+                <h2>Example:</h2>
+                <div class="beta">
+                    <span>
+                        <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>This is <span class="blue">&lt;</span><span class="brown">sup</span><span class="blue">&gt;</span>superscripted<span class="blue">&lt;</span><span class="brown">/sup</span><span class="blue">&gt;</span> text.<span class="blue">&lt;</span><span class="brown">/p</span><span class="blue">&gt;</span>
+                    </span>
+                </div>
+                <div class="link_to_code_editor">
+                    <a href="codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                            class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <hr class="line">
+            <!-- Code screen end. -->
+            <div class="previous_next">
+                <a href="html_paragraph.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_links/html_links.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <!-- Footer -->
+            <hr class="line">
+            <div class="footer">
+                <button onclick="report_error_toggle()">Report Error</button>
+                <div class="report_error">
+                    <h3>Report error:</h3>
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail: <span>shaurya.y321@gmail.com</span></p>
+                </div>
+                <div class="forum_about">
+                    <a href="">Forum</a> | <a href="about.html">About</a>
+                </div>
+                <div class="paragraphs">
+                    <p>LearnToCode is optimized for learning and training. Examples might be simplified to improve
+                        reading
+                        and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but
+                        we
+                        cannot warrant full correctness of all content. While using LearnToCode, you agree to have read
+                        and
+                        accepted our <a href="">terms of use</a>, <a href="">cookie and privacy policy</a>.</p>
+                    <p><a href="">Copyright 1999-2022</a> by Auxilium Info. All Rights Reserved. <a href="">LearnToCode
+                            is
+                            Powered by Auxilium</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

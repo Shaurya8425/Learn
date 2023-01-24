@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html image maps | html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="html_image_maps.css">
+    <link rel="stylesheet" href="../media_query.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="main">
+            <ul>
+                <li class="stop_breaking"><i class="fa-solid fa-code"></i>&nbsp;LearnToCode</li>
+                <li class="list_item"></li>
+            </ul>
+            <ul class="list">
+                <li><a href="">Home</a>
+                    <hr class="active">
+                </li>
+                <li class="stop_breaking tutorials">
+                    <a href="">Tutorials&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../html.html">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="../sign_up.html" class="signup">SignUp</a></li>
+                <li><a href="../log_in.html" class="login">LogIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="thin_nav_strip">
+        <a href="javascript:void(0);" onclick="sidebar_toggle()">Toggle<i class="fa-solid fa-bars"
+                onmousedown="return false" onselectstart="return false"></i></a>
+        <a href="../index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="../html.html">HTML</a>
+        <a href="">CSS</a>
+        <a href="">JavaScript</a>
+    </div>
+    <main>
+        <!-- Sidebar Navigation,I'm excited about it -->
+        <div class="side_navbar-outer">
+            <div class="side_navbar-inner">
+                <h2>HTML Tutorials</h2>
+                <a href="../html.html">HTML Introduction</a>
+                <a href="../html_heading.html">HTML Headings</a>
+                <a href="../html_paragraph.html">HTML Paragraphs</a>
+                <a href="../html_formatting.html">HTML Formatting</a>
+
+                <!-- html links -->
+                <a href="javascript:void(0);" onclick="links_toggle()">HTML Links &nbsp;<label for="links_dropdown"><i
+                            class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="links_dropdown"> -->
+                <div class="sidebar_links_dropdown">
+                    <ul class="sidebar_links_dropdown_menu">
+                        <li><a href="../html_links/html_links.html">Links</a></li>
+                        <li><a href="../html_links/html_links_link_colors.html">Link Colors</a></li>
+                        <li><a href="../html_links/html_links_link_bookmarks.html">Link Bookmarks</a></li>
+                    </ul>
+                </div>
+
+                <!-- html images -->
+                <a href="javascript:void(0);" onclick="images_toggle()">HTML Images &nbsp;<label
+                        for="images_dropdown"><i class="fa-solid fa-bars"></i></label></a>
+                <!-- <input type="checkbox" id="images_dropdown"> -->
+                <div class="sidebar_images_dropdown">
+                    <ul class="sidebar_images_dropdown_menu">
+                        <li><a href="html_images.html">Images</a></li>
+                        <li><a href="html_image_maps.html">Image Map</a></li>
+                        <li><a href="html_background_images.html">Background Images</a></li>
+                        <li><a href="html_picture_element.html">The Picture Element</a></li>
+                    </ul>
+                </div>
+
+                <!-- html tables -->
+                <a href="javascript:void(0)" onclick="tables_toggle()">HTML Tables &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown tables_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="../html_tables/html_tables.html">HTML Tables</a></li>
+                        <li><a href="../html_tables/html_table_borders.html">Table Borders</a></li>
+                        <li><a href="../html_tables/html_table_sizes.html">Table Sizes</a></li>
+                        <li><a href="../html_tables/html_table_headers.html">Table Headers</a></li>
+                        <li><a href="../html_tables/html_table_padding_spacing.html">Padding & Spacing</a></li>
+                        <li><a href="../html_tables/html_table_colspan_rowspan.html">Colspan & Rowspan</a></li>
+                        <li><a href="../html_tables/html_table_styling.html">Table Styling</a></li>
+                        <li><a href="../html_tables/html_table_colgroup.html">Table Colgroup</a></li>
+                    </ul>
+                </div>
+
+                <!-- html lists -->
+                <a href="javascript:void(0)" onclick="lists_toggle()">HTML Lists &nbsp;<i class="fa-solid fa-bars"></i></a>
+                <div class="sidebar_dropdown lists_dropdown">
+                    <ul class="sidebar_dropdown_menu">
+                        <li><a href="html_lists/lists.html">Lists</a></li>
+                        <li><a href="html_lists/html_unordered_list.html">Unordered Lists</a></li>
+                        <li><a href="html_lists/html_ordered_lists.html">Ordered Lists</a></li>
+                        <li><a href="html_lists/html_other_lists.html">Other Lists</a></li>
+                    </ul>
+                </div>
+
+                <a href="../html_block_inline.html">HTML Block & Inline</a>
+                <a href="../html_class.html">HTML Classes</a>
+                <a href="../html_id.html">HTML Id</a>
+                <a href="../html_iframe.html">HTML Iframes</a>
+                <a href="../html_javascript.html">HTML JavScript</a>
+                <a href="../html_file_path.html">HTML File Paths</a>
+                <a href="../html_head.html">HTML Head</a>
+                <a href="../html_layout.html">HTML Layout</a>
+                <a href="../html_responsive.html">HTML Responsive</a>
+ 
+            </div>
+        </div>
+        <div class="main_content">
+            <h2>HTML Image Maps</h2>
+            <div class="previous_next">
+                <a href="html_images.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_background_images.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <hr class="line">
+            <p>With HTML image maps, you can create clickable areas on an image.</p>
+            <div class="image_maps">
+                <h2>Image Maps</h2>
+                <p>The HTML <span class="styling_the_span">&lt;map&gt;</span> tag defines an image map. An image map is
+                    an image with clickable areas. The areas are defined with one or more <span
+                        class="styling_the_span">&lt;area&gt;</span> tags. <br>Try to click on the computer, phone, or
+                    the cup of coffee in the image below:</p>
+                <!-- clickable image -->
+                <div class="flexbox">
+                    <div class="an_idea">
+                        <img src="workplace.jpg" alt="workplace" usemap="#workmap">
+                    </div>
+                    <div class="workplace_marked">
+                        <img src="workplace_marked.jpg" alt="workplace marked">
+                    </div>
+                </div>
+                <map name="workmap">
+                    <area shape="poly"
+                        coords="79,258,72,258,22,289,21,295,22,300,76,384,140,384,153,374,153,368,154,363,78,259"
+                        href="https://en.wikipedia.org/wiki/IPhone" target="_blank" alt="Phone" title="iphone">
+                    <area shape="poly" coords="383,34,301,123,301,126,292,126,142,215,139,222,138,227,251,384,384,384"
+                        href="https://en.wikipedia.org/wiki/Mac_(computer)" target="_blank" alt="Computer" title="macbook">
+                    <!-- <area shape="circle" coords="167,50,81" href="coffee_tea" alt="coffee/tea"> -->
+                    <area shape="poly"
+                        coords="131,0,116,7,90,48,90,67,94,89,113,106,157,126,183,126,231,103,243,87,248,64,248,45,240,22,226,8,209,0"
+                        href="https://en.wikipedia.org/wiki/Coffee" target="_blank" alt="Coffee" title="coffee">
+                </map>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <p>Here is the HTML source code for the image map above:</p>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"workplace.jpg"</span> <span
+                                class="red">alt</span>=<span class="blue">"workplace"</span> <span
+                                class="red">usemap</span>=<span class="blue">"#workmap"&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">map</span> <span
+                                class="red">name</span>=<span class="blue">"workmap"&gt;</span>
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">&lt;</span><span class="brown">area</span>=<span
+                                class="blue">"poly"</span> <span class="red">coords</span>=<span class="blue">"79,258,
+                                72,258, 22,289, 21,295, 22,300, 76,384, 140,384, 153,374, 155,367, 152,359,
+                                81,258"</span> <span class="red">alt</span>=<span class="blue">"Phone"</span> <span
+                                class="red">href</span>=<span class="blue">"phone.html"</span> <span
+                                class="red">title</span>=<span class="blue">"iphone"&gt;</span>
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">&lt;</span><span class="brown">area</span>=<span
+                                class="blue">"poly"</span> <span class="red">coords</span>=<span class="blue">"383,34,
+                                301,123, 301,126, 292,126, 142,215, 139,222, 138,227, 251,384, 384,384"</span> <span
+                                class="red">alt</span>=<span class="blue">"Computer"</span> <span
+                                class="red">href</span>=<span class="blue">"computer.html"</span> <span
+                                class="red">title</span>=<span class="blue">"macbook"&gt;</span>
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">&lt;</span><span class="brown">area</span>=<span
+                                class="blue">"poly"</span> <span class="red">coords</span>=<span class="blue">"130,0,
+                                170,15, 90,44, 90,72, 108,102, 142,121, 194,121, 240,93, 250,58, 242,26, 218,0"</span>
+                            <span class="red">alt</span>=<span class="blue">"coffe_tea"</span> <span
+                                class="red">href</span>=<span class="blue">"coffee_tea.html"</span> <span
+                                class="red">title</span>=<span class="blue">"blacktea"&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/map</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="how_does_it_work">
+                <h2>How does it work?</h2>
+                <p>The idea behind an image map is that you should be able to perform different actions depending on
+                    where in the image you click. <br>To create an image map you need an image, and some HTML code that
+                    describes the clickable areas.</p>
+            </div>
+            <hr class="line">
+            <div class="the_image">
+                <h2>The Image</h2>
+                <p>The image is inserted using the <span class="styling_the_span">&lt;img&gt;</span> tag. The only
+                    difference from other images is that you must add a usemap attribute:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">img</span> <span
+                                class="red">src</span>=<span class="blue">"workplace.jpg"</span> <span
+                                class="red">alt</span>=<span class="blue">""workplace</span> <span
+                                class="red">usemap</span>=<span class="blue">"#workmap"&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <p>The <span class="styling_the_span">usemap</span> value starts with a hash tag <span
+                        class="styling_the_span">#</span> followed by the name of the image map, and is used to create a
+                    relationship between the image and the image map.</p>
+                <div class="note">
+                    <p><b>Tip:</b> You can use any image as an image map!</p>
+                </div>
+            </div>
+            <div class="create_image_map">
+                <p>Then, add a <span class="styling_the_span">&lt;map&gt;</span> element. <br>The <span
+                        class="styling_the_span">&lt;map&gt;</span> element is used to create an image map, and is
+                    linked to the image by using the required name attribute:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">map</span> <span
+                                class="red">name</span>=<span class="blue">"workmap"&gt;</span>
+                        </span>
+                    </div>
+                </div>
+                <p>The <span class="styling_the_span">name</span> attribute must have the same value as the <span
+                        class="styling_the_span">name</span>'s <span class="styling_the_span">usemap</span> attribute.
+                </p>
+            </div>
+            <hr class="line">
+            <div class="the_area">
+                <h2>The Area</h2>
+                <p>Then, add the clickable areas. <br>A clickable area is defined using an <span
+                        class="styling_the_span">&lt;area&gt;</span> element.</p>
+                <h3>Shape</h3>
+                <p>You must define the shape of the clickable area, and you can choose one of these values:</p>
+                <ul>
+                    <li><span class="styling_the_span">rect</span> - defines a rectangular region</li>
+                    <li><span class="styling_the_span">circle</span> - defines a circular region</li>
+                    <li><span class="styling_the_span">poly</span> - defines a polygonal region</li>
+                    <li><span class="styling_the_span">default</span> - defines the entire region</li>
+                </ul>
+                <p>You must also define some coordinates to be able to place the clickable area onto the image. </p>
+                <hr class="line">
+                <div class="box">
+                    <h2>Go Man</h2>
+                    <div class="img_understanding">
+                        <img src="geo_man.jpg" alt="">
+                        <img src="geo_man_numbered.jpg" alt="">
+                    </div>
+                </div>
+                <hr class="line">
+                <h3>Shape="rect", (2,3,4,8,10,11)</h3>
+                <p>The coordinates for <span class="styling_the_span">shape="rect"</span> come in pairs, one for the
+                    x-axis and one for the y-axis. <br>So, the coordinates 1,2 is located 1 pixels from the left margin
+                    and 2 pixels from the top. <br>Now we have enough data to create a clickable rectangular area:</p>
+                <div class="go_man_img">
+                    <div class="an_idea">
+                        <h2>Mapped Go Man</h2>
+                        <img src="geo_man_mapped.jpg" alt="Go Man Marked" usemap="#go_man_rect">
+                    </div>
+                    <map name="go_man_rect">
+                        <!-- Rectangle -->
+                        <area shape="rect" coords="71,116,166,168" href="https://en.wikipedia.org/wiki/Rectangle" alt="Go Man"
+                            title="shape 2: rectangle" target="_blank">
+                        <area shape="rect" coords="166,214,263,117" href="https://en.wikipedia.org/wiki/Rectangle" alt="Go Man"
+                            title="shape 3: rectangle" target="_blank">
+                        <area shape="rect" coords="263,117,360,168" href="https://en.wikipedia.org/wiki/Rectangle" alt="Go Man"
+                            title="shape 4: rectangle" target="_blank">
+                        <area shape="rect" coords="166,214,264,310" href="https://en.wikipedia.org/wiki/Rectangle" alt="Go Man"
+                            title="shape 8: rectangle" target="_blank">
+                        <area shape="rect" coords="151,311,204,406" href="https://en.wikipedia.org/wiki/Rectangle" alt="Go Man"
+                            title="shape 10: rectangle" target="_blank">
+                        <area shape="rect" coords="226,311,278,406" href="https://en.wikipedia.org/wiki/Rectangle" alt="Go Man"
+                            title="shape 11: rectangle" target="_blank">
+                        <!-- Circle -->
+                        <area shape="circle" coords="41,141,28" href="https://en.wikipedia.org/wiki/Circle" alt="Circle" target="_blank"
+                            title="shape 1: circle">
+                        <area shape="circle" coords="389,141,28" href="https://en.wikipedia.org/wiki/Circle" alt="Circle" target="_blank"
+                            title="shape 4: circle">
+                        <!-- Triangle -->
+                        <area shape="poly" coords="177,10,140,101,267,45" href="https://en.wikipedia.org/wiki/Triangle" alt="Triangle"
+                            target="_blank" title="shape 6: triangle">
+                        <!-- Semicircle -->
+                        <area shape="poly"
+                            coords="163,89,167,98,174,105,182,110,191,115,202,116,212,115,221,112,231,105,238,97,243,88,245,80,246,69,244,60,242,53"
+                            href="https://en.wikipedia.org/wiki/Semicircle" alt="Circle" title="shape 7: semicircle" target="_blank">
+                        <area shape="poly"
+                            coords="59,405,60,400,148,406,61,394,67,383,76,375,84,366,95,364,105,364,116,364,124,368,133,375,139,383,143,392,148,406"
+                            href="https://en.wikipedia.org/wiki/Semicircle" alt="Circle" title="shape 9: semicircle" target="_blank">
+                        <area shape="poly"
+                            coords="276,405,278,394,283,381,291,373,302,367,312,362,323,360,333,362,342,367,352,373,359,381,363,390,365,405"
+                            href="https://en.wikipedia.org/wiki/Semicircle" alt="Circle" title="shape 12: semicircle" target="_blank">
+                    </map>
+                </div>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">area</span> <span
+                                class="red">shape</span>=<span class="blue">"rect"</span> <span
+                                class="red">coords</span>=<span class="blue">"71,116,166,168"</span> <span
+                                class="red">href</span>=<span class="blue">"rectangle.html"</span> <span
+                                class="red">title</span>=<span class="blue">"shape 2: rectangle"</span>
+                        </span> <br>
+                        <span class="blue">&lt;</span><span class="brown">area</span> <span
+                            class="red">shape</span>=<span class="blue">"rect"</span> <span
+                            class="red">coords</span>=<span class="blue">"166,214,263,117"</span> <span
+                            class="red">href</span>=<span class="blue">"rectangle.html"</span> <span
+                            class="red">title</span>=<span class="blue">"shape 3: rectangle"</span>
+                        </span> <br>
+                        <span class="blue">&lt;</span><span class="brown">area</span> <span
+                            class="red">shape</span>=<span class="blue">"rect"</span> <span
+                            class="red">coords</span>=<span class="blue">"263,117,360,168"</span> <span
+                            class="red">href</span>=<span class="blue">"rectangle.html"</span> <span
+                            class="red">title</span>=<span class="blue">"shape 4: rectangle"</span>
+                        </span> <br>
+                        <span class="blue">&lt;</span><span class="brown">area</span> <span
+                            class="red">shape</span>=<span class="blue">"rect"</span> <span
+                            class="red">coords</span>=<span class="blue">"166,214,264,310"</span> <span
+                            class="red">href</span>=<span class="blue">"rectangle.html"</span> <span
+                            class="red">title</span>=<span class="blue">"shape 8: rectangle"</span>
+                        </span> <br>
+                        </span>
+                        <span class="blue">&lt;</span><span class="brown">area</span> <span
+                            class="red">shape</span>=<span class="blue">"rect"</span> <span
+                            class="red">coords</span>=<span class="blue">"226,311,278,406"</span> <span
+                            class="red">href</span>=<span class="blue">"rectangle.html"</span> <span
+                            class="red">title</span>=<span class="blue">"shape 11: rectangle"</span>
+                        </span>
+                    </div>
+                </div>
+                <p>This is the area that becomes clickable and will send the user to the page "rectangle.html":</p>
+                <img src="go_man_rectanglemarked.jpg" class="go_man_rectanglemarked" alt="">
+                <hr class="line">
+                <h3>shape="circle"</h3>
+                <p>To add a circle area, first locate the coordinates of the center of the circle. <br>Then specify the
+                    radius of the circle. <br>Now you have enough data to create a clickable circular area:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">area</span> <span
+                                class="red">shape</span>=<span class="blue">"circle"</span> <span
+                                class="red">coords</span>=<span class="blue">"41,141,28"</span> <span
+                                class="red">href</span>=<span class="blue">"circle.html"</span> <span
+                                class="red">title</span>=<span class="blue">"shape 1: circle"</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">area</span> <span
+                                class="red">shape</span>=<span class="blue">"circle"</span> <span
+                                class="red">coords</span>=<span class="blue">"389,141,28"</span> <span
+                                class="red">href</span>=<span class="blue">"circle.html"</span> <span
+                                class="red">title</span>=<span class="blue">"shape 5: circle"</span>
+                        </span> <br>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <p>This is the area that becomes clickable and will send the user to the page "circle.html":</p>
+                <img src="go_man_circlemarked.jpg" class="go_man_circlemarked" alt="">
+                <hr class="line">
+                <h3>shape="poly"</h3>
+                <p>The shape="poly" contains several coordinate points, which creates a shape formed with straight lines
+                    (a polygon). <br>This can be used to create any shape. <br>Like maybe a triangle shape! <br>How can
+                    we make the traingle in the image below become a clickable link? <br>We have to find the x and y
+                    coordinates for all edges of the trianle:</p>
+                <!-- <img src="go_man_trianglemarked.jpg" alt="Go Man's Hat!"> -->
+                <p>The coordinates come in pairs, one for the x-axis and one for the y-axis:</p>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">area</span> <span
+                                class="red">shape</span>=<span class="blue">"triangle"</span> <span
+                                class="red">coords</span>=<span class="blue">"177,10,140,101,267,45"</span> <span
+                                class="red">href</span>=<span class="blue">"triangle.html"</span> <span
+                                class="red">title</span>=<span class="blue">"shape 6: triangle"</span>
+                        </span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <p>This is the area that becomes clickable and will send the user to the page "triangle.html":</p>
+                <img src="go_man_trianglemarked.jpg" class="go_man_trianglemarked" alt="">
+            </div>
+            <div class="image_map_and_javascript">
+                <h2>Image Map and JavaScript</h2>
+                <p>A clickable area can also trigger a JavaScript function. <br>Add a <span
+                        class="styling_the_span">click</span> event to the <span
+                        class="styling_the_span">&lt;area&gt;</span> element to execute a JavaScript function:</p>
+                <div class="flexbox">
+                    <div class="magnifying_glass">
+                        <img src="magnifying_glass.jpg" alt="" usemap="#magnifying_glass" class="magnifying_glass_img">
+                    </div>
+                    <div class="magnifying_glass_marked">
+                        <img src="magnifying_glass_marked.jpg" alt="">
+                    </div>
+                </div>
+                <map name="magnifying_glass">
+                    <area shape="poly"
+                        coords="0,54,0,68,77,66,87,62,96,62,101,76,108,84,120,94,142,97,161,91,173,78,178,58,175,42,164,26,149,18,132,15,115,21,102,32,96,48,96,55,90,55,80,49"
+                        href="https://en.wikipedia.org/wiki/Magnifying_glass" target="_blank" alt="" onclick="afunction()">
+                </map>
+                <div class="alpha">
+                    <h2>Example:</h2>
+                    <p>Here, we use the onclick attribute to execute a JavaScript function when the area is clicked:</p>
+                    <div class="beta">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">map</span> <span
+                                class="red">name</span>=<span class="blue">"magnifying_glass"&gt;</span>
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="blue">&lt;</span><span class="brown">area</span> <span
+                                class="red">shape</span>=<span class="blue">"circle"</span> <span
+                                class="red">coords</span>=<span class="blue">"0,54, 0,68, 77,66, 87,62, 96,62, 101,76,
+                                108,84, 120,94, 142,97, 161,91, 173,78, 178,58, 175,42, 164,26, 149,18, 132,15, 115,21,
+                                102,32, 96,48, 96,55, 90,55, 80,49"</span> <span class="red">href</span>=<span
+                                class="blue">"magnifying_glass.html"</span> <span class="red">onclick</span>=<span
+                                class="blue">"afunction()"&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/map</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">script</span><span
+                                class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">function</span> afunction() {
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;altert(<span class="blue">"You clicked on the magnifying
+                                glass!"</span>);
+                        </span> <br>
+                        <span>
+                            }
+                        </span> <br>
+                        <span class="blue">&lt;</span><span class="brown">/script</span><span class="blue">&gt;</span>
+                    </div>
+                    <div class="link_to_code_editor">
+                        <a href="../codeEditor/index.html" target="_blank">Try it Yourself&nbsp;<i
+                                class="fa-solid fa-angle-right"></i><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+            <div class="chapter_summary">
+                <h2>Chapter Summary</h2>
+                <ul>
+                    <li>Use the HTML <span class="styling_the_span">&lt;map&gt;</span> element to define an image map
+                    </li>
+                    <li>Use the HTML <span class="styling_the_span">&lt;area&gt;</span> element to define the clickable
+                        areas in the image map</li>
+                    <li>Use the HTML <span class="styling_the_span">usemap</span> attribute of the <span
+                            class="styling_the_span">&lt;img&gt;</span> element to point to an image map</li>
+                </ul>
+            </div>
+            <div class="previous_next">
+                <a href="html_images.html" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_background_images.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <!-- Footer -->
+            <hr class="line">
+            <div class="footer">
+                <button onclick="report_error_toggle()">Report Error</button>
+                <div class="report_error">
+                    <h3>Report error:</h3>
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail: <span>shaurya.y321@gmail.com</span></p>
+                </div>
+                <div class="forum_about">
+                    <a href="">Forum</a> | <a href="../about.html">About</a>
+                </div>
+                <div class="paragraphs">
+                    <p>LearnToCode is optimized for learning and training. Examples might be simplified to improve
+                        reading
+                        and learning. Tutorials, references, and examples are constantly reviewed to avoid errors, but
+                        we
+                        cannot warrant full correctness of all content. While using LearnToCode, you agree to have read
+                        and
+                        accepted our <a href="">terms of use</a>, <a href="">cookie and privacy policy</a>.</p>
+                    <p><a href="">Copyright 1999-2022</a> by Auxilium Info. All Rights Reserved. <a href="">LearnToCode
+                            is
+                            Powered by Auxilium</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jQuery-rwdImageMaps/jquery.rwdImageMaps.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+        function afunction() {
+            alert("You clicked the Magnifying Glass!");
+        } 
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

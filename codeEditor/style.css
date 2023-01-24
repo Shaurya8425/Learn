@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif';
+}
+html{
+    font-size: 60%;
+}
+/* These coloured classes are made for writing the alpha class's content more efficiently. Very Helpful! */
+.blue {
+    color: blue;
+}
+
+.brown {
+    color: brown;
+}
+
+.red {
+    color: red;
+}
+
+.code_editor-box{
+    width: 80%;
+    margin: 5rem auto;
+    border: .25rem solid blac;
+}
+.editor-menu{
+    width: 100%;
+    height: 5rem;
+    background-color: orange;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px 0 5px 10px;
+}
+.btn007{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: blue;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .75em 1em;
+    min-width: 5rem;
+    transition: all .25s;
+}
+.btn007:hover{
+    background-color: orangered;
+}
+.live{
+    font-size: 2rem;
+    font-weight: bold;
+    border: .5rem solid red;
+    border-radius: .5rem;
+    padding: .25rem;
+    align-items: center;
+}
+.live > *{
+    cursor: pointer;
+}
+.container007{
+    position: absolute;
+    bottom: 0;
+    top: 5rem;
+    width: 100%;
+    display: flex;
+}
+.left,
+.right{
+    height: 92.28vh;
+    width: 50%;
+}
+.bar{
+    width: 1rem;
+    height: 92.28vh;
+    /* border: 1px solid black; */
+    background-color: orange;
+    cursor: w-resize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar i{
+    font-size: 5rem;
+    color: orange;
+}
+.right{
+    flex: 1;
+}
+.editor{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    outline: none;
+    font-family: 'Fira Code';
+    font-weight: bold;
+    padding: 1rem 0 0 1rem;
+    border-color: yellow;
+    overflow-y: scroll;
+}
+.iframe{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    white-space: pre;
+    right: 0;
+    padding: 5px;
+}
+.label{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}   

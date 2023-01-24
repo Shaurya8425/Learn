@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learntocode.com | learn with passion!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="editorStyle.css">
+    <link rel="stylesheet" href="media_query.css">
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="nav">
+        <ul>
+            <li class="stop_breaking"><i class="fa-solid fa-code"></i>&nbsp;LearnToCode</li>
+            <li class="list_item"></li>
+        </ul>
+        <ul class="list">
+            <li><a href="index.html">Home</a>
+                <hr class="active">
+            </li>
+            <li class="stop_breaking tutorials">
+                <a href="javascript:void(0);" onclick="tutorials_toggle()" onmousedown="return false" onselectstart="return false">Tutorials&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                <ul class="dropdown">
+                    <li><a href="html.html">HTML</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                </ul>
+            </li>
+            <li><a href="">Videos</a></li>
+        </ul>
+        <ul class="list">
+            <li><a href="sign_up.html" class="signup">SignUp</a></li>
+            <li><a href="log_in.html" class="login">LogIn</a></li>
+        </ul>
+    </nav>
+
+    <!-- main content -->
+    <main>
+        <!-- home -->
+        <div class="home">
+            <div class="home_box_outer">
+                <h1>Learn to Code</h1>
+                <h3>with the world's best learning site.</h3>
+                <div class="home_box_inner"><input type="text" placeholder="search our tutorials, e.g. HTML"><a
+                        href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                <h2>Not Sure About Where To Begin?</h2>
+            </div>
+        </div>
+        <!-- html -->
+        <div class="HTML">
+            <div class="HTML-box">
+                <div class="HTML-box-table">
+                    <h1>HTML</h1>
+                    <h3>The language for building web pages</h3>
+                    <ul>
+                        <li><a class="learn_html" href="html.html">Learn HTML</a></li>
+                        <li><a class="html_preferences" href="html_refrence/html_by_alphabet.html">HTML Refrences</a></li>
+                    </ul>
+                </div>
+                <div class="code-screen">
+                    <h2>HTML Example:</h2>
+                    <div class="code-screen-box">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">!DOCTYPE</span> <span
+                                class="red">html</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">html</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">title</span><span
+                                class="blue">&gt;</span>HTML Tutorial<span class="blue">&lt;</span><span
+                                class="brown">/title</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">title</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">h1</span><span
+                                class="blue">&gt;</span>This is a heading<span class="blue">&lt;</span><span
+                                class="brown">/h1</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">p</span><span class="blue">&gt;</span>This
+                            is a paragraph.<span class="blue">&lt;</span><span class="brown">/p</span><span
+                                class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/body</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">/html</span><span class="blue">&gt;</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- css -->
+        <div class="HTML CSS">
+            <div class="HTML-box CSS-box">
+                <div class="HTML-box-table CSS-box-table">
+                    <h1>CSS</h1>
+                    <h3>The language for styling web pages</h3>
+                    <ul>
+                        <li><a class="learn_html learn_css" href="">Learn CSS</a></li>
+                        <li><a class="html_preferences css_preferences" href="">CSS Refrences</a></li>
+                    </ul>
+                </div>
+                <div class="code-screen">
+                    <h2>CSS Example:</h2>
+                    <div class="code-screen-box">
+                        <span>
+                            <span class="brown">body</span> {
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;<span class="red">background-color</span>: <span class="blue">lightblue</span>;
+                        </span> <br>
+                        <span>
+                            &nbsp;}
+                        </span> <br>
+                        <span>
+                            <span class="brown">h1</span> {
+                        </span> <br>
+                        <span>
+                            <span class="red">color</span>: <span class="blue">white</span>;
+                        </span> <br>
+                        <span>
+                            <span class="red">tex-align</span>: <span class="blue">center</span>;
+                        </span> <br>
+                        <span>
+                            &nbsp;}
+                        </span> <br>
+                        <span>
+                            <span class="brown">p</span> <span>{</span>
+                        </span> <br>
+                        <span>
+                            <span class="red">font-family</span>: <span class="blue">verdana</span>;
+                        </span> <br>
+                        <span>
+                            &nbsp;}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- javascript -->
+        <div class="HTML CSS javascript">
+            <div class="HTML-box CSS-box javascript-box">
+                <div class="HTML-box-table CSS-box-table javascript-box-table">
+                    <h1>JavaScript</h1>
+                    <h3>The language for programming web pages</h3>
+                    <ul>
+                        <li><a class="learn_html learn_css" href="">Learn JavaScript</a></li>
+                        <li><a class="html_preferences css_preferences" href="">JavaScript Refrences</a></li>
+                    </ul>
+                </div>
+                <div class="code-screen code-screen-javascript">
+                    <h2>JavaScript Example:</h2>
+                    <div class="code-screen-box javascript_code_box">
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">button</span> <span
+                                class="red">onclick</span>=<span class="blue">"myFunction()&gt;"</span>Click Me!<span
+                                class="blue">&lt;</span><span class="brown">/button</span><span class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">&lt;</span><span class="brown">script</span><span
+                                class="blue">&gt;</span>
+                        </span> <br>
+                        <span>
+                            <span class="blue">function</span> myFunction() {
+                        </span> <br>
+                        <span>
+                            &nbsp;&nbsp;<span class="blue">let</span> x = document.getElementById(<span
+                                class="brown">"demo"</span>);
+                        </span> <br>
+                        <span>
+                            x.style.fontSize = <span class="brown">"25px"</span>;
+                        </span> <br>
+                        <span>
+                            x.style.color = <span class="brown">"red"</span>;
+                        </span> <br>
+                        <span>
+                            }
+                        </span> <br>
+                        <span class="blue">&lt;</span><span class="brown">/script</span><span class="blue">&gt;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- code editor -->
+        <div class="code_editor-outer">
+            <h1>Code Editor</h1>
+            <h3>With our online code editor, you can edit code and view the result in your browser</h3>
+            <div class="code_editor-box">
+                <div class="code_editor-inner">
+                    <div class="editor_menu">
+                        <button class="btn0 btn-dark">Dark Mode</button>
+                        <button class="btn0 btn-light">Light Mode</button>
+                        <button class="btn0 btn-run">Run</button>
+                        <div class="live">
+                            <label for="live" onmousedown="return false" onselectstart="return false">Live</label>
+                            <input type="checkbox" id="live">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="left">
+                            <div class="editor" contenteditable="">
+                                Write your code...
+                            </div>
+                        </div>
+                        <!-- <div class="bar" title="Click & Drag"></div> -->
+                        <div class="right">
+                            <iframe src="" frameborder="0" class="iframe"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <!-- btn, forum | about, icons, paragraph & thumbs up. -->
+        <div class="btn">
+            <ul>
+                <li><a href="">QUIZZES</a></li>
+                <li><a href="">EXERCISES</a></li>
+                <li><a href="">SUPPORT</a></li>
+            </ul>
+            <ul class="forum_about">
+                <li><a href="">Forum</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-square-facebook"></i></a>&nbsp;<a href=""><i
+                    class="fa-brands fa-instagram"></i></a>&nbsp;<a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="paragraph">
+            <p>
+                LearnToCode is optimized for learning and training. Examples might be simplified to improve reading &
+                basic understanding. Tutorials, references and examples are constantly reviewed to avoid errors, but we
+                cannot warrent full correctness of all content. While using this site, your agree to have read and
+                accepted our <a href="">terms of use</a>, <a href="">cookie and privacy policy</a>.<a href=""> copyright
+                    1999-2022</a> by auxilium. All Rights Reserved.
+            </p>
+            <p class="thumbs_up"><a href=""><i class="fa-solid fa-thumbs-up"></i></a></p>
+        </div>
+    </footer>
+    <script src="editorScript.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

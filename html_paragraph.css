@@ -1,0 +1,20 @@
+.paragraphs_code_screen{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding: 1.25rem .5rem;
+    background-color: grey;
+    border-radius: .25rem;
+}
+.paragraphs_code_screen h2{
+    margin: 0 auto;
+    color: white;
+}
+.paragraphs_code_screen_box{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    padding: .25rem;
+    border-radius: .25rem;
+    font-weight: bold;
+    font-size: 1rem;
+}

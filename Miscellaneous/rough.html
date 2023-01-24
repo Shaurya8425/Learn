@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .dropdown {
+            display: none;
+        }
+
+        .products:hover .dropdown {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ribbon {
+            background: #e7e6e6 url(../images/category-bg.png) repeat-x bottom right;
+            display: block;
+            padding: 8px 5px 13px 20px;
+            width: 20%;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        .table1 {
+            border: 1px solid black;
+            width: 40%;
+            margin-bottom: 1rem;
+        }
+
+        .table1 th,
+        .table1 td {
+            border: 1px solid black;
+        }
+
+        .table2 {
+            border: 1px solid red;
+            width: 40%;
+        }
+
+        .table2 th,
+        .table2 td {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li class="products">
+            <a href="">Products</a>
+            <ul class="dropdown">
+                <li><a href="">Jeans</a></li>
+                <li><a href="">Shirts</a></li>
+                <li><a href="">Shoes</a></li>
+            </ul>
+        </li>
+        <li><a href="">Services</a></li>
+    </ul>
+    <div class="w3_org">
+        <!-- Ribbon -->
+        <span class="ribbon">
+            <a href="">Hello World</a>
+        </span>
+    </div>
+    <br>
+    <a href="javascript:void(0);" onclick="toggle()"><i class="fa-solid fa-bars"></i></a>
+    <div id="menu">
+        <a href="">Home</a> <br>
+        <a href="">Contact</a> <br>
+        <a href="">About</a>
+    </div> <br>
+    <img src="../html_images/workplace.jpg" alt="workplace" usemap="#workmap">
+    <map name="workmap">
+        <area shape="poly" coords="" href="phone.html" alt="Phone" title="iphone">
+        <area shape="poly" coords="" href="computer.html" alt="Computer" title="macbook">
+        <area shape="circle" coords="" href="coffee_tea" alt="coffee/tea">
+        <area shape="poly" coords="" href="" alt="">
+    </map>
+    <table class="table1">
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table2">
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <script>
+        function toggle() {
+            var x = document.getElementById("menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.rwdImageMaps.min.js"></script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learntocode | html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="media_query.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="main">
+            <ul>
+                <li class="stop_breaking"><i class="fa-solid fa-code"></i>&nbsp;LearnToCode</li>
+                <li class="list_item"></li>
+            </ul>
+            <ul class="list">
+                <li><a href="">Home</a>
+                </li>
+                <li class="stop_breaking tutorials">
+                    <a href="">Tutorials&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                    <hr class="active">
+                    <ul class="dropdown">
+                        <li><a href="html.html">HTML</a></li>
+                        <li><a href="">CSS</a></li>
+                        <li><a href="">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Videos</a></li>
+            </ul>
+            <ul class="list">
+                <li><a href="" class="signup">SignUp</a></li>
+                <li><a href="" class="login">LogIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="thin_nav_strip">
+        <!-- <span class="sidebar_toggle">
+            <input type="checkbox" id="sidebar_toggle_checkbox">
+            <label for="sidebar_toggle_checkbox"><i class="fa-solid fa-bars" onmousedown="return false"
+                    onselectstart="return false"></i></label>
+        </span> -->
+        <a href="javascript:void(0);" onclick="sidebar_toggle()">Toggle<i class="fa-solid fa-bars"
+                onmousedown="return false" onselectstart="return false"></i></a>
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="html.html">HTML</a>
+        <a href="">CSS</a>
+        <a href="">JavaScript</a>
+    </div>
+    <main>
+        <!-- Sidebar Navigation,I'm excited about it -->
+        <div class="side_navbar-outer">
+            <div class="side_navbar-inner">
+                <h2>About us</h2>
+                <a href="">About LearnToCode</a>
+                <a href="">About Terms</a>
+                <a href="">About Privacy</a>
+            </div>
+        </div>
+        <div class="main_content">
+            <h2>About Learntocode</h2>
+            <div class="previous_next">
+                <a href="" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_heading.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <div class="what_is_learntocode">
+                <h3>What is learntocode?</h3>
+                <p>We create simplified and interactive learning experiences. Learning web development should be easy to
+                    understand and available for everyone, everywhere! W3Schools is a school for web developers,
+                    covering all the aspects of web development:</p>
+                <ul>
+                    <li><a href="html.html">HTML Tutorial</a></li>
+                    <li><a href="html.html">CSS Tutorial</a></li>
+                    <li><a href="html.html">JavaScript Tutorial</a></li>
+                </ul>
+            </div>
+            <hr class="line">
+            <div class="easy_learning">
+                <h3>Easy Learning</h3>
+                <p>Learntocode has focus on simplicity. It practice easy learning. It uses simple illustrations of how
+                    to use it. Our tutorials start from basic level and move all the way up to professional references.
+                </p>
+            </div>
+            <hr class="line">
+            <div class="try_it_yourself">
+                <h3>Try It Yourself</h3>
+                <p>It presents thousands of code examples. By using our online editor, <a
+                        href="codeEditor/index.html">Try it Yourself</a>, you can edit examples and execute computer
+                    code experimentally, to see what works and what does not, before implementing it.</p>
+            </div>
+            <hr class="line">
+            <div class="learntocode_is_free">
+                <h3>LearnToCode is free</h3>
+                <p>LearnToCode is, and will always be, a completely free developers resource.</p>
+            </div>
+            <hr class="line">
+            <div class="you_can_help">
+                <h3>You can Help</h3>
+                <p>Many people work very hard to ensure w3schools remains useful, updated, and interesting. If you find
+                    an error, or a broken link, please tell us about it. Use the link "REPORT ERROR" at the bottom of
+                    each page.</p>
+            </div>
+            <div class="add_link_to_us">
+                <p>If you want others to discover W3schools, please add a link to us. To add a simple text link, insert
+                    the following HTML code on your site:</p>
+                <div class="a_code_line">
+                    <span class="blue">&lt;</span><span class="brown">a</span> <span class="red">href</span><span
+                        class="blue">="https://www.w3schools.com"></span> learntocode <span
+                        class="blue">&lt;</span><span class="brown">/a</span><span class="blue">&gt;</span>
+                </div>
+                <p>If you want to link with a banner, please choose from: <a href="">Banners and Buttons</a></p>
+            </div>
+            <hr class="line">
+            <!-- Footer -->
+            <div class="previous_next">
+                <a href="" class="previous"><i class="fa-solid fa-angle-left"></i>Previous</a>
+                <a href="html_heading.html" class="next">Next<i class="fa-solid fa-angle-right"></i></a>
+            </div>
+            <hr class="line">
+            <div class="footer">
+                <button onclick="report_error_toggle()">Report Error</button>
+                <div class="report_error">
+                    <h3>Report error:</h3>
+                    <p>If you want to report an error, or if you want to make a suggestion, do not hesitate to send us an e-mail: <span>shaurya.y321@gmail.com</span></p>
+                </div>
+                <div class="forum_about">
+                    <a href="">Forum</a> | <a href="">About</a>
+                </div>
+                <div class="paragraphs">
+                    <p>LearnToCode is optimized for learning and training. Examples might be simplified to improve
+                        reading and learning. Tutorials, references, and examples are constantly reviewed to avoid
+                        errors, but we cannot warrant full correctness of all content. While using LearnToCode, you
+                        agree to have read and accepted our <a href="">terms of use</a>, <a href="">cookie and privacy
+                            policy</a>.</p>
+                    <p><a href="">Copyright 1999-2022</a> by Auxilium Info. All Rights Reserved. <br> <a
+                            href="">LearnToCode is Powered by Auxilium</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.table1,
+.table2,
+.table3,
+.table4 {
+    border: 1px solid black;
+    width: 25%;
+    border-collapse: collapse;
+    font-size: 8px;
+    height: .75rem;
+    margin-bottom: 1rem;
+}
+
+th,
+td {
+    border: 1px solid black;
+}
+
+.lot_of_tables {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.table5, .table6, .table7 {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.table5 td {
+    text-align: left;
+}
+
+
+@media (max-width:584px) {
+    .lot_of_tables {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+}
