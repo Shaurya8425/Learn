@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 72vh;
     /* width: 100%; */
     /* border: 1px solid black; */
 }
@@ -82,12 +82,17 @@ a{
     margin-right: .25rem;
 }
 .a_casual_logo{
-    border: 1px solid grey;
-    border-radius: 50%;
+    /* border: 1px solid grey;
+    border-radius: .5rem; */
+    margin: 1rem;
     display: inline-block;
     padding: 0 1rem;
-    color: white;
-    background-color: black;
+    color: black;
+    /* background-color: black; */
+}
+.a_casual_logo h2{
+    margin: .5rem;
+    font-size: 2rem;
 }
 .header{
     display: flex;
